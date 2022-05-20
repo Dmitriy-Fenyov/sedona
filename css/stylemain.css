@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/web/ptsans.woff2") format("woff2"), url("fonts/web/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/web/ptsansbold.woff2") format("woff2"), url("fonts/web/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -10px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase; }
+
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.page-header {
+  height: auto; }
+
+.main-nav__list {
+  display: grid;
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+  .main-nav__list :nth-child(3) {
+    order: 1; }
+  @media (min-width: 768px) {
+    .main-nav__list {
+      display: flex; }
+      .main-nav__list :nth-child(3) {
+        order: 0; } }
+
+.site-list__item {
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center; }
+
+.main-nav__list a {
+  color: white;
+  text-decoration: none; }
+  @media (min-width: 768px) {
+    .main-nav__list a {
+      color: black; } }
+
+.site-list {
+  background-color: #81b3d2; }
+  .site-list :nth-child(3) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 -7px 7px rgba(0, 0, 0, 0.2); }
+    @media (min-width: 768px) {
+      .site-list :nth-child(3) {
+        margin: 0 auto;
+        padding: 0 auto;
+        box-shadow: none; } }
+  @media (min-width: 768px) {
+    .site-list {
+      background-color: white; } }
+
+.bold {
+  font-weight: bold;
+  border-bottom: 1px solid darkblue; }
+  @media (min-width: 768px) {
+    .bold {
+      border: none; } }
+
+.page-header__toggle {
+  position: absolute;
+  right: 5%;
+  bottom: 55%;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  display: block;
+  content: "";
+  width: 23px;
+  height: 4px;
+  background-color: #81B3D2;
+  box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2; }
+  @media (min-width: 768px) {
+    .page-header__toggle {
+      display: none; } }
+
+.shadow .bold {
+  box-shadow: inset 0 7px 0 black; }
+
+.open {
+  display: none; }
+  @media (min-width: 768px) {
+    .open {
+      display: block; } }
+
+.view {
+  display: grid;
+  min-height: 389px;
+  min-width: 320px;
+  grid-template-rows: 3fr 1fr; }
+  @media (min-width: 768px) {
+    .view {
+      min-height: 490px; } }
+  @media (min-width: 1200px) {
+    .view {
+      min-height: 518px; } }
+
+.view--bg-back {
+  background-color: lightblue;
+  background: url(../img/bg-back-mobile@2x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .view--bg-back {
+      background: url(../img/bg-back-tablet@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center -150px; } }
+  @media (min-width: 1200px) {
+    .view--bg-back {
+      background: url(../img/bg-back-desktop@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center -150px; } }
+
+.view__promo {
+  margin-top: 50px; }
+
+.view__promo--promo {
+  background-image: url(../img/text-sedona-index.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.view__mask--mask {
+  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+@media (min-width: 768px) {
+  .view__mask--mask {
+    background: url(../img/bg-intro-triangle-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; } }
+
+@media (min-width: 1200px) {
+  .view__mask--mask {
+    background: url(../img/bg-intro-triangle-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; } }
+
+.features {
+  min-width: 320px; }
+
+.features__title {
+  width: 285px;
+  padding: 55px 0;
+  margin: auto;
+  align-items: center;
+  vertical-align: middle; }
+  @media (min-width: 768px) {
+    .features__title {
+      width: 520px;
+      margin: auto;
+      text-align: center; } }
+
+.features__title--title {
+  font-size: 18px;
+  line-height: 26px; }
+
+.features__intro {
+  width: 285px;
+  padding-bottom: 40px;
+  margin: auto;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .features__intro {
+      width: 520px;
+      margin: auto;
+      text-align: center; } }
+
+.features__intro--intro {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal; }
+
+.features__list {
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .features__list {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap; } }
+
+.features__item {
+  padding: 27px 0; }
+
+.features__item--first {
+  background-color: #81b3d2;
+  color: white; }
+
+.features__image {
+  max-height: 260px; }
+
+.features__item--second {
+  background-color: #EEEEEE; }
+
+.booking {
+  min-width: 320px;
+  margin: auto;
+  padding-top: 35px;
+  padding-bottom: 50px; }
+  @media (min-width: 768px) {
+    .booking {
+      width: 100vh; } }
+  @media (min-width: 1200px) {
+    .booking {
+      width: 100vh; } }
+
+.booking__title {
+  width: 261px;
+  height: 40px;
+  margin: auto;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .booking__title {
+      min-height: 320px;
+      width: 100vh; } }
+
+.booking__description {
+  width: 261px;
+  height: 80px;
+  margin: auto;
+  text-align: center; }
+
+.booking__button {
+  margin: auto;
+  padding: 16px 20px 18px 20px; }
+
+.booking__button--button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  align-items: center; }

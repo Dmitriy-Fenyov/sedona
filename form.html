@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona - небольшой городок в Аризоне</title>   <!--заголовок сайта-->
+    <link rel="stylesheet" href="css/stylemain.css">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+            <li class="site-list__item bold">
+              <a href="index2.html">
+                главная
+              </a>
+            </li>
+            <li class="site-list__item bold">
+              <a href="photo.html">
+                фото и видео
+              </a>
+            </li>
+            <li class="site-list__item white">
+              <a href="index.html" class="page-header__logo">
+                <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+              </a>
+              <button class="page-header__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </li>
+            <li class="site-list__item site-list__item--active bold">
+              <a >
+                форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item bold">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </header> 
+
+    <main class="page-main">
+        <h1 class="visually-hidden">
+            Отзывы о Седоне
+        </h1>
+        <div class="view view--bg-back">
+            <div class="view__promo view__promo--text"></div>
+            <div class="view__mask view__mask--mask"></div>
+        </div>
+        <section class="photo">
+            <h2 class="photo__title photo__title--title">
+              оставьте свой отзыв
+            </h2>
+            <p class="photo__intro photo__intro--intro">
+              помогите нашим отелям стать лучше! оставьте отзыв о них, атакже о посещенных вами достопримечательностях
+            </p>
+        </section>
+        <form class="form" method="GET">
+            <div class="form-review">
+                <h2 class="photo__title photo__title--title">представьтесь:</h2>
+                <p class="form-review__item">
+                    <label>имя*:
+                    <input class="form-review__input form-review--bold" type="text" placeholder="Пётр"
+                    name="firstname" value="" required> </label>
+                </p>
+                <p class="form-review__item">
+                    <label>фамилия*:
+                    <input class="form-review__input form-review--bold" type="text" placeholder="Иванов"
+                    name="secondname" value="" required> </label>
+                </p>
+                <p class="form-review__item">
+                    <label>отчество:
+                    <input class="form-review__input form-review--bold" type="text" placeholder="Александрович"
+                    name="thirdname" value=""> </label>
+                </p>
+            </div>
+            <div class="form-contact">
+                <h3 class="form-contact__title">контактная информация:</h3>
+                <p class="form-contact__item">
+                    <label>контактный телефон*:
+                    <input class="form-contact__input form-review--bold" type="text" placeholder="Введите телефон"
+                    name="phome-number" value="" required> </label>
+                </p>
+                <p class="form-contact__item">
+                    <label>электронная почта*:
+                    <input class="form-contact__input form-review--bold" type="text" placeholder="Введите e-mail"
+                    name="e-mail" value="" required> </label>
+                </p>
+            </div>
+            <div class="form-impression">
+                <h3 class="form-impression__title">ваше общее впечатление:</h3>
+                <ul>
+                    <li class="form-impression__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input form-impression__input--ball" type="radio" 
+                        name="impression" value="good" checked>Скорее  положительное </label>
+                    </li>
+                    <li class="form-contact__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input form-impression__input--ball" type="radio" 
+                        name="impression" value="bad">Скорее отрицательное </label>
+                    </li>
+                    <li class="form-contact__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input form-impression__input--ball" type="radio" 
+                        name="impression" value="difficult">Затрудняюсь ответить </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-places">
+                <h3 class="form-places__title">посещенные достопримечательности:</h3>
+                <ul>
+                    <li class="form-places__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input visually-hidden" type="checkbox" 
+                        name="bridge" checked>
+                        <span class="check-box"></span> Мост Дьявола </label>
+                    </li>
+                    <li class="form-contact__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input visually-hidden" type="checkbox"
+                        name="mountain" checked>
+                        <span class="check-box"></span> Гора-Колокол </label>
+                    </li>
+                    <li class="form-contact__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input visually-hidden" type="checkbox"
+                        name="park" checked> 
+                        <span class="check-box"></span> Слайд-парк </label>
+                    </li>
+                    <li class="form-contact__item">
+                        <label class="form-review--bold">
+                        <input class="form-impression__input visually-hidden" type="checkbox"
+                        name="rocks"> 
+                        <span class="check-box"></span> Красные скалы </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-emotion">
+                <h3 class="form-emotion__title">опишите свои эмоции:</h3>
+                <input class="form-emotion__input" type="text" placeholder="Опишите подробно все свои восторги"
+                name="emotion" value="">
+            </div>
+            <button class="booking__button booking__button--button" type="button">отправить отзыв</button>
+        </form>
+
+        
+
+    </main>
+
+        <footer class="page-footer">
+          <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
+          <div class="footer-buttons">
+              <ul class="footer-buttons__list">
+                  <li><a class="footer-buttons__link footer-buttons__link--twitter" href="#" aria-label="Твиттер"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+                  <li><a class="footer-buttons__link footer-buttons__link--facebook" href="#" aria-label="Фейсбук"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+                  <li><a class="footer-buttons__link footer-buttons__link--youtube" href="#" aria-label="Ютуб"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
+              </ul>
+          </div>
+          <div class="footer-log">
+              <p class="footer-log__by">website by</p>
+              <a class="footer-log__logo" href="#" aria-label="сайт HTMLacademy">
+                  <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="производство сайта от HTML academy">
+              </a>
+          </div>
+        </footer>
+    
+      </body>
+    </html>
