@@ -1,0 +1,75 @@
+.page-footer {
+padding: 40px 20px 25px 20px;    
+}
+
+.footer__hesh {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer__hesh--hesh {
+    font-size: 21px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-buttons__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-buttons__link {
+display: block;
+position: relative;
+width: 48px;
+height: 48px;
+background-color: #81b3d2;
+text-decoration: none;    
+}
+
+.footer-buttons__link--twitter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 19px;
+    height: 28px;
+    transform: translate(-50%, -50%);
+}
+
+.footer-buttons__link--facebook {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 13px;
+    height: 26px;
+    transform: translate(-50%, -50%);
+}
+
+.footer-buttons__link--youtube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.footer-log {
+display: flex;
+justify-content: center;
+align-items: center;    
+}
+
+.footer-log__by {
+    margin-right: 10px;
+}

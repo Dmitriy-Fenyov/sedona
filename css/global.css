@@ -1,6 +1,7 @@
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -12,16 +13,19 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .page {
   height: 100%;
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .page__body {
   min-height: 100%;
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1200px;
+}

@@ -1,37 +1,48 @@
 .features {
-  min-width: 320px; }
+  min-width: 320px;
+}
 
 .features__title {
-  width: 285px;
-  padding: 55px 0;
-  margin: auto;
+  padding: 55px 50px 55px 50px;
+  margin: 0 auto;
   align-items: center;
-  vertical-align: middle; }
-  @media (min-width: 768px) {
-    .features__title {
-      width: 520px;
-      margin: auto;
-      text-align: center; } }
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .features__title {
+    width: 520px;
+    margin: auto;
+    text-align: center;
+  }
+}
 
 .features__title--title {
   font-size: 18px;
-  line-height: 26px; }
+  line-height: 26px;
+}
 
 .features__intro {
-  width: 285px;
-  padding-bottom: 40px;
-  margin: auto;
-  align-items: center; }
-  @media (min-width: 768px) {
-    .features__intro {
-      width: 520px;
-      margin: auto;
-      text-align: center; } }
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .features__intro {
+    width: 520px;
+    margin: auto;
+    text-align: center;
+  }
+}
 
 .features__intro--intro {
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 .features__list {
   min-width: 320px;
@@ -40,22 +51,53 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .features__list {
-      display: flex;
-      text-align: center;
-      flex-wrap: wrap; } }
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .features__list {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
 
 .features__item {
-  padding: 27px 0; }
+  padding: 27px 20px;
+}
+
+.features__item-2 {
+  margin: 35px 0;
+}
 
 .features__item--first {
   background-color: #81b3d2;
-  color: white; }
+  color: white;
+}
 
 .features__image {
-  max-height: 260px; }
+  max-height: 260px;
+  max-width: 100%;
+}
 
 .features__item--second {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.reason__image {
+  height: 260px;
+  width: 100%;
+}
+
+.features__title-cause {
+  padding: 5px 40px 5px 120px;
+  margin: 0;
+  text-align: start;
+}
+
+.features__cause {
+  padding-left: 120px;
+  padding-right: 40px;
+  margin: 0;
+  text-align: start;
+}

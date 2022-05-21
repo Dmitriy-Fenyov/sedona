@@ -10,7 +10,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active bold " >
+            <li class="site-list__item site-list__item--active bold" >
               <a>
                 главная
               </a>
@@ -62,22 +62,32 @@
             <p>Седона - не отракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="features__image">
-            <img src="img/main-city-mobile@2x.jpg">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/main-city-desktop@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/main-city-tablet@1x.jpg">
+              <source media="(min-width:320px)" srcset="img/main-city-mobile@1x.jpg">
+              <img class="reason__image" src="img/main-city-desktop@1x.jpg" width="100%" height="260" alt="Седона Сити">
+            </picture>
           </li>
           <li class="features__item-2 features__item-2--home">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <h3 class="features__title-cause">Жилье</h3>
+            <p class="features__cause">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="features__item-2 features__item-2--eat">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруеетсь!</p>
+            <h3 class="features__title-cause">Еда</h3>
+            <p class="features__cause">Всегда заказывайте фирменный бургер, вы не разочаруеетсь!</p>
           </li>
           <li class="features__item-2 features__item-2--souv">
-            <h3>Сувениры</h3>
-            <p>Нетолько китайского, но и местного производства!</p>
+            <h3 class="features__title-cause">Сувениры</h3>
+            <p class="features__cause">Нетолько китайского, но и местного производства!</p>
           </li>
           <li class="features__image">
-            <img src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" alt="вид каньона">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+              <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@1x.jpg">
+              <img class="reason__image" src="img/photo-bridge-desktop@1x.jpg" alt="Седона мост">
+            </picture>
           </li>
           <li class="features__item features__item--first">
             <h3>Там есть мост дьявола</h3>
@@ -107,8 +117,8 @@
         <button class="booking__button booking__button--button" type="button">найти гостинницу</button>
       </section>
       <section class="map">
-        <h2 class="visyally-hidden">карта</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318719.14727607137!2d-111.94796581383542!3d34.80365899735481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1622715502720!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2 class="visually-hidden">карта</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d318719.14727607137!2d-111.94796581383542!3d34.80365899735481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1622715502720!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
     </main>
 
@@ -116,15 +126,15 @@
       <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
       <div class="footer-buttons">
           <ul class="footer-buttons__list">
-              <li><a class="footer-buttons__link footer-buttons__link--twitter" href="#" aria-label="Твиттер"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
-              <li><a class="footer-buttons__link footer-buttons__link--facebook" href="#" aria-label="Фейсбук"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-              <li><a class="footer-buttons__link footer-buttons__link--youtube" href="#" aria-label="Ютуб"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
+              <li><a class="footer-buttons__link" href="#" aria-label="Твиттер"><img class="footer-buttons__link--twitter" src="img/icon-twitter.svg" alt="twitter"></a></li>
+              <li><a class="footer-buttons__link" href="#" aria-label="Фейсбук"><img class="footer-buttons__link--facebook" src="img/icon-facebook.svg" alt="facebook"></a></li>
+              <li><a class="footer-buttons__link" href="#" aria-label="Ютуб"><img class="footer-buttons__link--youtube" src="img/icon-youtube.svg" alt="youtube"></a></li>
           </ul>
       </div>
       <div class="footer-log">
           <p class="footer-log__by">website by</p>
           <a class="footer-log__logo" href="#" aria-label="сайт HTMLacademy">
-              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="производство сайта от HTML academy">
+              <img src="img/dima.png" width="40" height="40" alt="производство сайта от HTML academy">
           </a>
       </div>
     </footer>

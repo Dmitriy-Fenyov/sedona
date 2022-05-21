@@ -21,13 +21,14 @@
     }
 }
 .booking__description {
-    width: 261px;
-    height: 80px;
-    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 30px;
     text-align: center;
 }
 .booking__button {
-    margin: auto;
+    display: block;
+    margin: 0 auto;
     padding: 16px 20px 18px 20px;
 }
 .booking__button--button {
