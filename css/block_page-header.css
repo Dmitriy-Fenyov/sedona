@@ -46,6 +46,7 @@
   .site-list :nth-child(3) {
     margin: 0 auto;
     padding: 0 auto;
+    position: relative;
   }
 }
 @media (min-width: 768px) {
@@ -63,6 +64,24 @@
   bottom: 0;
   right: 0;
   background-color: transparent;
+}
+@media (min-width: 768px) {
+  .page-header__logo-image {
+    width: 450px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .page-header__logo-image {
+    width: 700px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .bold {
@@ -100,6 +119,11 @@
 
 .shadow {
   box-shadow: inset 0px -7px 10px -5px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .shadow {
+    box-shadow: none;
+  }
 }
 
 .open {

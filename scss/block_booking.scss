@@ -4,19 +4,19 @@
     padding-top: 35px;
     padding-bottom: 50px;
     @media (min-width:768px) {
-        width: 100vh;
+        width: 100%;
     }
     @media (min-width:1200px) {
-        width: 100vh;
+        width: 100%;
     }
 }
+
 .booking__title {
     width: 261px;
     height: 40px;
     margin: auto;
     text-align: center;
     @media (min-width:768px) {
-        min-height: 320px;
         width: 100vh;
     }
 }
@@ -25,6 +25,10 @@
     padding-right: 50px;
     margin-bottom: 30px;
     text-align: center;
+    @media (min-width:768px) {
+        padding: 0 200px;
+    }
+
 }
 .booking__button {
     display: block;
@@ -40,4 +44,21 @@
     border: none;
     text-transform: uppercase;
     align-items: center;
+}
+
+.map {
+    background: url(../img/bg-map-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-width:768px) {
+        background: url(../img/bg-map-tablet@1x.jpg);
+        background-repeat: no-repeat;
+      
+    }
+    @media (min-width:1200px) {
+        background: url(../img/bg-map-desktop@1x.jpg);
+        background-repeat: no-repeat;
+           
+    }
 }
