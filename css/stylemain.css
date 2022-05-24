@@ -312,8 +312,6 @@ img {
 
 .features__list {
   min-width: 320px;
-  display: grid;
-  grid-template-rows: 1fr;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -330,6 +328,11 @@ img {
 .features__item {
   padding: 27px 20px;
 }
+@media (min-width: 768px) {
+  .features__item {
+    width: 33%;
+  }
+}
 
 .features__item-2 {
   margin: 35px 0;
@@ -343,6 +346,11 @@ img {
 .features__image {
   max-height: 260px;
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  .features__image {
+    width: 66%;
+  }
 }
 
 .features__item--second {
@@ -366,6 +374,14 @@ img {
   padding-right: 40px;
   margin: 0;
   text-align: start;
+}
+@media (min-width: 768px) {
+  .features__cause {
+    width: 185px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+  }
 }
 
 .booking {
@@ -538,4 +554,64 @@ img {
 
 .footer-log__by {
   margin-right: 10px;
+}
+
+.photo__title {
+  text-align: center;
+  padding: 30px 20px 30px 20px;
+  max-width: 350px;
+  margin: 0 auto 20px;
+}
+@media (min-width: 768px) {
+  .photo__title {
+    padding: 40px 150px 40px 150px;
+  }
+}
+
+.photo__title--title {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .photo__title--title {
+    font-size: 30px;
+  }
+}
+
+.photo-block {
+  max-width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #d6d6d6;
+}
+@media (min-width: 768px) {
+  .photo-block {
+    border-top: none;
+  }
+}
+
+.photo {
+  list-style: none;
+}
+
+.photo-block__list {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photo-block__item {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #d6d6d6;
+}
+@media (min-width: 768px) {
+  .photo-block__item {
+    border-bottom: none;
+  }
+}
+
+.photo-block__image {
+  max-height: 280px;
 }

@@ -8,36 +8,42 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item bold">
-              <a href="index.html">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active bold" >
+              <a>
                 главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active bold">
-              <a>
+            <li class="site-list__item bold ">
+              <a href="photo.html">
                 фото и видео
               </a>
             </li>
-            <li class="site-list__item white">
-              <a href="index.html" class="page-header__logo">
-                <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона">
+            <li class="site-list__item page-header__logo">
+              <a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Лого Седона" width="102" height="83">
+                </picture>
               </a>
-              <button class="page-header__toggle" type="button">
+              <button class="page-header__toggle page-header__toggle--toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </li>
-            <li class="site-list__item bold">
+            <li class="site-list__item bold ">
               <a href="form.html">
                 форма отзыва
               </a>
             </li>
-            <li class="site-list__item bold">
+            <li class="site-list__item bold shadow ">
               <a href="#">
-                html academy
+                найти гостинницу
               </a>
             </li>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -50,37 +56,59 @@
             <div class="view__mask view__mask--mask"></div>
         </div>
         <section class="photo">
-            <h2 class="photo__title photo__title--title">
-              фото и видео
-            </h2>
-            <p class="photo__intro photo__intro--intro">
-              не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
-            </p>
+            <div class="photo__title">
+              <h2 class="photo__title--title">
+                фото и видео
+              </h2>
+              <p class="photo__intro photo__intro--intro">
+                не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
+              </p>
+            </div>  
             <div class="photo-block">
-                <ul class="photo-block__list">
+                <ul class="photo-block__list photo">
                     <li class="photo-block__item">
-                        <img src="img/photo-sunset-mobile@1x.jpg" alt="закат в Седоне">
+                      <picture>
+                        <source media="(min-width:1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                        <source media="(min-width:768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                        <source media="(min-width:320px)" srcset="img/photo-sunset-mobile@1x.jpg">
+                        <img class="photo-block__image" src="img/photo-sunset-desktop@1x.jpg" width="100%" height="280" alt="закат в Седоне">
+                      </picture>
                         <h3 class="photo-block__title photo-block__title--bold">народные просторы</h3>
                         <p class="photo-block__author photo-block__author--size"> Автор фото: Борис</p>
                         <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
                         <output name="resalt">1350</output> 
                     </li>
                     <li class="photo-block__item">
-                        <img src="img/photo-cactus-mobile@1x.jpg" alt="растительность Седоны">
+                      <picture>
+                        <source media="(min-width:1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                        <source media="(min-width:768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                        <source media="(min-width:320px)" srcset="img/photo-cactus-mobile@1x.jpg">
+                        <img class="photo-block__image" src="img/photo-cactus-desktop@1x.jpg" width="100%" height="280" alt="растительность Седоны">
+                      </picture>
                         <h3 class="photo-block__title photo-block__title--bold">местная растительность</h3>
                         <p class="photo-block__author photo-block__author--size"> Автор фото: Сергей</p>
                         <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
                         <output name="resalt">143</output> 
                     </li>
                     <li class="photo-block__item">
-                        <img src="img/photo-roads-mobile@1x.jpg" alt="дорога на север">
+                      <picture>
+                        <source media="(min-width:1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                        <source media="(min-width:768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                        <source media="(min-width:320px)" srcset="img/photo-roads-mobile@1x.jpg">
+                        <img class="photo-block__image" src="img/photo-roads-desktop@1x.jpg" width="100%" height="280" alt="дорога на север">
+                      </picture>
                         <h3 class="photo-block__title photo-block__title--bold">дорога на север</h3>
                         <p class="photo-block__author photo-block__author--size"> Автор фото: Пётр</p>
                         <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
                         <output name="resalt">96</output> 
                     </li>
                     <li class="photo-block__item">
-                        <img src="img/photo-bridge-mobile@1x.jpg" alt="мост в Седоне">
+                      <picture>
+                        <source media="(min-width:1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                        <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                        <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@1x.jpg">
+                        <img class="photo-block__image" src="img/photo-bridge-desktop@1x.jpg" width="100%" height="280" alt="мост в Седоне">
+                      </picture>
                         <h3 class="photo-block__title photo-block__title--bold">мост дьявола</h3>
                         <p class="photo-block__author photo-block__author--size"> Автор фото: Антон</p>
                         <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
@@ -112,15 +140,15 @@
       <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
       <div class="footer-buttons">
           <ul class="footer-buttons__list">
-              <li><a class="footer-buttons__link footer-buttons__link--twitter" href="#" aria-label="Твиттер"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
-              <li><a class="footer-buttons__link footer-buttons__link--facebook" href="#" aria-label="Фейсбук"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-              <li><a class="footer-buttons__link footer-buttons__link--youtube" href="#" aria-label="Ютуб"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
+              <li><a class="footer-buttons__link" href="#" aria-label="Твиттер"><img class="footer-buttons__link--twitter" src="img/icon-twitter.svg" alt="twitter"></a></li>
+              <li><a class="footer-buttons__link" href="#" aria-label="Фейсбук"><img class="footer-buttons__link--facebook" src="img/icon-facebook.svg" alt="facebook"></a></li>
+              <li><a class="footer-buttons__link" href="#" aria-label="Ютуб"><img class="footer-buttons__link--youtube" src="img/icon-youtube.svg" alt="youtube"></a></li>
           </ul>
       </div>
       <div class="footer-log">
           <p class="footer-log__by">website by</p>
-          <a class="footer-log__logo" href="#" aria-label="сайт HTMLacademy">
-              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="производство сайта от HTML academy">
+          <a class="footer-log__logo" href="https://vk.com/id93282061" aria-label="сайт HTMLacademy">
+              <img src="img/dima.png" width="40" height="40" alt="производство сайта от HTML academy">
           </a>
       </div>
     </footer>
