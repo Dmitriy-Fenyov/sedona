@@ -37,7 +37,20 @@
 .photo-block__list {
   padding: 0;
   margin: 0 auto;
-  text-align: center;
+}
+@media (min-width: 768px) {
+  .photo-block__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .photo-block__list :nth-child(1) {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-block__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .photo-block__item {
@@ -56,4 +69,39 @@
 
 .photo-block__image {
   max-height: 280px;
+}
+
+.photo-block__title {
+  margin: 10px 0;
+}
+
+.photo-block__author {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.photo-block__info {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .photo-block__info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.photo-block__author--size {
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .bg-wrapper {
+    background-color: #f2f2f2;
+  }
+}
+
+.photo-block__button--like {
+  border: none;
+  opacity: 0.3;
+  background: none;
 }

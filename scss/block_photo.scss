@@ -28,10 +28,19 @@
 }
 
 .photo-block__list {
-   padding: 0;
+    padding: 0;
     margin: 0 auto;
+    @media (min-width:768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        :nth-child(1) {
+            grid-column: 1 / -1;
+          }
+    }
+    @media (min-width:1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-    text-align: center;
 }
 
 .photo-block__item {
@@ -47,6 +56,41 @@
 }
 .photo-block__image {
     max-height: 280px;
-    
+}
 
+.photo-block__title {
+    margin: 10px 0;
+}
+
+.photo-block__author {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.photo-block__info {
+margin-bottom: 20px;
+@media (min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+.photo-block__author--size {
+    text-transform: none;
+}
+
+.bg-wrapper {
+    @media (min-width:768px) {
+       background-color: #f2f2f2;
+    }
+}
+
+
+
+
+
+.photo-block__button--like {
+    border: none;
+    opacity: 0.3;
+    background: none;
 }
