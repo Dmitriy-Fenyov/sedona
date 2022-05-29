@@ -136,9 +136,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+.photo-block__button--wrapper {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
   .photo-block__button--wrapper {
-    padding-right: 15px;
+    padding-right: 25px;
   }
 }
 

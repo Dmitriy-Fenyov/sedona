@@ -120,10 +120,13 @@ margin-bottom: 20px;
 }
 
 .photo-block__button--wrapper {
-    @media (min-width:1200px) {
-        padding-right: 15px;
+    display: flex;
+    align-items: center;
+    @media (min-width:768px) {
+        padding-right: 25px;
     }
 }
+
 
 .photo-block__button--like {
     border: none;

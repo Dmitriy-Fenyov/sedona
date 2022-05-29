@@ -79,7 +79,11 @@
                           <p class="photo-block__author photo-block__author--size"> Автор фото: Борис</p>
                         </div>
                         <div class="photo-block__button--wrapper">
-                          <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
+                          <button class="photo-block__button photo-block__button--like" type="button">
+                            <svg class="like__icon" width="24" height="22">
+                              <use xlink:href="img/sprite.svg#icon-like"></use>
+                            </svg>
+                          </button>
                           <output name="resalt">1350</output>
                         </div>
                       </div> 
@@ -97,7 +101,11 @@
                           <p class="photo-block__author photo-block__author--size"> Автор фото: Сергей</p>
                         </div>
                         <div class="photo-block__button--wrapper">
-                          <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
+                          <button class="photo-block__button photo-block__button--like" type="button">
+                            <svg class="like__icon" width="24" height="22">
+                              <use xlink:href="img/sprite.svg#icon-like"></use>
+                            </svg>
+                          </button>
                           <output name="resalt">143</output>
                         </div>
                       </div>  
@@ -115,7 +123,11 @@
                           <p class="photo-block__author photo-block__author--size"> Автор фото: Пётр</p>
                         </div>
                         <div class="photo-block__button--wrapper">
-                          <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
+                          <button class="photo-block__button photo-block__button--like" type="button">
+                            <svg class="like__icon" width="24" height="22">
+                              <use xlink:href="img/sprite.svg#icon-like"></use>
+                            </svg>
+                          </button>
                           <output name="resalt">96</output>
                         </div>
                       </div> 
@@ -133,7 +145,11 @@
                             <p class="photo-block__author photo-block__author--size"> Автор фото: Антон</p>
                           </div> 
                           <div class="photo-block__button--wrapper">   
-                            <button class="photo-block__button photo-block__button--like" type="button"><img src="img/icon-like.svg" alt="like"></button>
+                            <button class="photo-block__button photo-block__button--like" type="button">
+                              <svg class="like__icon" width="24" height="22">
+                                <use xlink:href="img/sprite.svg#icon-like"></use>
+                              </svg>
+                            </button>
                             <output name="resalt">254</output>
                           </div>
                       </div> 
@@ -142,20 +158,37 @@
             </div>
         </section>
         <section class="video">
-            <h2 class="photo__title photo__title--title">все еще сомневаетесь?</h2>
-            <p class="photo__intro photo__intro--intro">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <h2 class="video__title photo__title--title">все еще сомневаетесь?</h2>
+            <p class="video__intro photo__intro--intro">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <div class="video-frame">
-                <img src="img/video-mobile@1x.jpg" alt="видео про Седону">
-                <div class="video-frame__options">
-                    <div class="video-frame__timer video-frame__timer--bg-grey"></div>
-                    <div class="video-frame__slider video-frame__slider--border"></div>
-                </div>
+              <div class="video-frame--wrapper">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/video-desktop@1x.jpg">
+                  <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg">
+                  <source media="(min-width:320px)" srcset="img/video-mobile@1x.jpg">
+                  <img class="video-frame__image" src="img/video-mobile@1x.jpg" width="100%" height="200" alt="видео про Седону">
+                </picture>
+              </div>  
+              <div class="video-frame__options">
+                <div class="video-frame__timer"></div>
                 <div class="video-frame__function">
-                    <button class="video-frame__repeat video-frame__repeat--icon-repeat" type="button"> <img src="img/icon-video-replay.svg" alt="повтор"></button>
-                    <button class="video-frame__subtitles video-frame__subtitles--icon-subtitles" type="button"> <img src="img/icon-video-subtitles.svg" alt="субтитры"></button>
-                    <button class="video-frame__fullscreen video-frame__fullscreen--icon-fulscreen" type="button"> <img src="img/icon-video-fullscreen.svg" alt="полный экран"></button>
-
+                    <button class="video-frame__repeat video-frame__repeat--icon-repeat" type="button">
+                       <svg class="video-frame__icon" width="16" height="20">
+                         <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                       </svg> 
+                    </button>
+                    <button class="video-frame__subtitles video-frame__subtitles--icon-subtitles" type="button"> 
+                      <svg class="video-frame__icon" width="32" height="20">
+                        <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                      </svg> 
+                    </button>
+                    <button class="video-frame__fullscreen video-frame__fullscreen--icon-fulscreen" type="button"> 
+                      <svg class="video-frame__icon" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                      </svg> 
+                    </button>
                 </div>
+              </div>
             </div>
         </section>
     </main>
