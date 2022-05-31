@@ -66,6 +66,7 @@
 }
 .photo-block__image {
     max-height: 280px;
+    
 }
 
 .photo-block__title {
@@ -132,6 +133,7 @@ margin-bottom: 20px;
     border: none;
     opacity: 0.3;
     background: none;
+    cursor: pointer;
     @media (min-width:1200px) {
         fill: #ffffff;
         opacity: 1.0;

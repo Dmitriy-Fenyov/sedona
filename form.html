@@ -55,31 +55,32 @@
             <div class="view__promo view__promo--text"></div>
             <div class="view__mask view__mask--mask"></div>
         </div>
-        <section class="photo">
-            <h2 class="photo__title photo__title--title">
+        <section class="block-form">
+            <h2 class="block-form__title block-form__title--title">
               оставьте свой отзыв
             </h2>
-            <p class="photo__intro photo__intro--intro">
-              помогите нашим отелям стать лучше! оставьте отзыв о них, атакже о посещенных вами достопримечательностях
+            <p class="block-form__intro block-form__intro--intro">
+              помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
             </p>
         </section>
-        <form class="form" method="GET">
+        <form class="form" method="post">
+          <div class="form-wrapper">
             <div class="form-review">
-                <h2 class="photo__title photo__title--title">представьтесь:</h2>
+                <h2 class="form-review__title form-review__title--title">представьтесь:</h2>
                 <p class="form-review__item">
-                    <label>имя*:
+                    <label class="form__label">имя*:</label>
                     <input class="form-review__input form-review--bold" type="text" placeholder="Пётр"
-                    name="firstname" value="" required> </label>
+                    name="firstname" value="" required>
                 </p>
                 <p class="form-review__item">
-                    <label>фамилия*:
+                    <label class="form__label">фамилия*:</label>
                     <input class="form-review__input form-review--bold" type="text" placeholder="Иванов"
-                    name="secondname" value="" required> </label>
+                    name="secondname" value="" required> 
                 </p>
                 <p class="form-review__item">
-                    <label>отчество:
+                    <label class="form__label">отчество:</label>
                     <input class="form-review__input form-review--bold" type="text" placeholder="Александрович"
-                    name="thirdname" value=""> </label>
+                    name="thirdname" value=""> 
                 </p>
             </div>
             <div class="form-contact">
@@ -150,6 +151,7 @@
                 name="emotion" value="">
             </div>
             <button class="booking__button booking__button--button" type="button">отправить отзыв</button>
+          </div>
         </form>
 
         
@@ -160,9 +162,27 @@
       <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
       <div class="footer-buttons">
           <ul class="footer-buttons__list">
-              <li><a class="footer-buttons__link" href="#" aria-label="Твиттер"><img class="footer-buttons__link--twitter" src="img/icon-twitter.svg" alt="twitter"></a></li>
-              <li><a class="footer-buttons__link" href="#" aria-label="Фейсбук"><img class="footer-buttons__link--facebook" src="img/icon-facebook.svg" alt="facebook"></a></li>
-              <li><a class="footer-buttons__link" href="#" aria-label="Ютуб"><img class="footer-buttons__link--youtube" src="img/icon-youtube.svg" alt="youtube"></a></li>
+              <li>
+                <a class="footer-buttons__link" href="#" aria-label="Твиттер">
+                  <svg class="footer-buttons__link--twitter" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-buttons__link" href="#" aria-label="Фейсбук">
+                  <svg class="footer-buttons__link--facebook" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-buttons__link" href="#" aria-label="Ютуб">
+                  <svg class="footer-buttons__link--youtube" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
           </ul>
       </div>
       <div class="footer-log">

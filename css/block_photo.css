@@ -150,6 +150,7 @@
   border: none;
   opacity: 0.3;
   background: none;
+  cursor: pointer;
 }
 @media (min-width: 1200px) {
   .photo-block__button--like {

@@ -63,6 +63,7 @@
   width: 19px;
   height: 28px;
   transform: translate(-50%, -50%);
+  fill: #ffffff;
 }
 
 .footer-buttons__link--facebook {
@@ -72,6 +73,7 @@
   width: 13px;
   height: 26px;
   transform: translate(-50%, -50%);
+  fill: #ffffff;
 }
 
 .footer-buttons__link--youtube {
@@ -81,6 +83,7 @@
   width: 25px;
   height: 30px;
   transform: translate(-50%, -50%);
+  fill: #ffffff;
 }
 
 .footer-log {
