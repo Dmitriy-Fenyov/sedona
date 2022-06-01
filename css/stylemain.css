@@ -601,8 +601,6 @@ img {
 
 .photo-block__list {
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -627,6 +625,8 @@ img {
 .photo-block__item {
   max-width: 100%;
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #d6d6d6;
 }
@@ -634,6 +634,7 @@ img {
   .photo-block__item {
     border-bottom: none;
     margin-bottom: 0px;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -916,8 +917,14 @@ img {
   }
 }
 
-.form-wrapper {
-  margin: 0 15px;
+.form-review {
+  padding: 0 15px 25px 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+@media (min-width: 768px) {
+  .form-review {
+    border-top: none;
+  }
 }
 
 .form-review__title {
@@ -925,11 +932,20 @@ img {
   margin: 20px 0;
 }
 
+.form-review__title--title {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .form-review__title--title {
+    font-size: 21px;
+  }
+}
+
 .form-review__item {
   display: flex;
 }
 
-.form__label {
+.form-review__label {
   align-self: center;
 }
 
@@ -943,4 +959,64 @@ img {
 
 .form-review--bold {
   color: #000000;
+  padding-left: 10px;
+}
+
+.form-contact {
+  padding: 0 15px 25px 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+@media (min-width: 768px) {
+  .form-contact {
+    border-top: none;
+  }
+}
+
+.form-contact__input {
+  width: 75%;
+  height: 58px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 0 0 0 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.form-contact__title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-contact__title--title {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .form-contact__title--title {
+    font-size: 21px;
+  }
+}
+
+.form-contact__label {
+  margin-left: 15px;
+  line-height: 21px;
+  display: block;
+}
+
+.form-contact__item {
+  margin: 0;
+}
+
+.form__icon {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  margin-left: -3px;
+  vertical-align: middle;
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__icon--telephone {
+  background-image: url(../img/icon-phone.svg);
 }
