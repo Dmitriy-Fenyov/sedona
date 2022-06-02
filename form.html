@@ -99,24 +99,25 @@
                 </p>
             </div>
             <div class="form-impression">
-                <h3 class="form-impression__title">ваше общее впечатление:</h3>
-                <ul>
-                    <li class="form-impression__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input form-impression__input--ball" type="radio" 
-                        name="impression" value="good" checked>Скорее  положительное </label>
-                    </li>
-                    <li class="form-contact__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input form-impression__input--ball" type="radio" 
-                        name="impression" value="bad">Скорее отрицательное </label>
-                    </li>
-                    <li class="form-contact__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input form-impression__input--ball" type="radio" 
-                        name="impression" value="difficult">Затрудняюсь ответить </label>
-                    </li>
-                </ul>
+                <h3 class="form-impression__title form-impression__title--title">ваше общее впечатление:</h3>
+                  <label class="form-impression__label">
+                    <input class="form-impression__input form-impression__input--radio visually-hidden" type="radio" 
+                    name="impression" value="good" checked>
+                    <span class="form-impression-indicator form-impression-indicator--radio"></span>
+                    <span class="form-impression-text"> Скорее  положительное </span>  
+                  </label>
+                  <label class="form-impression__label">
+                      <input class="fform-impression__input form-impression__input--ball visually-hidden" type="radio" 
+                      name="impression" value="bad">
+                      <span class="form-impression-indicator form-impression-indicator--radio"></span>
+                      <span class="form-impression-text"> Скорее отрицательное </span> 
+                  </label>
+                  <label class="form-impression__label">
+                    <input class="form-impression__input form-impression__input--ball visually-hidden" type="radio" 
+                     name="impression" value="difficult">
+                     <span class="form-impression-indicator form-impression-indicator--radio"></span>
+                     <span class="form-impression-text"> Затрудняюсь ответить  </span>
+                  </label>
             </div>
             <div class="form-places">
                 <h3 class="form-places__title">посещенные достопримечательности:</h3>

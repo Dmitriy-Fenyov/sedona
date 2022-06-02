@@ -1020,3 +1020,64 @@ img {
 .form__icon--telephone {
   background-image: url(../img/icon-phone.svg);
 }
+
+.form-impression {
+  padding: 0 15px 25px 15px;
+  border-bottom: 1px solid #d6d6d6;
+}
+@media (min-width: 768px) {
+  .form-impression {
+    border-top: none;
+  }
+}
+
+.form-impression__title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-impression__title--title {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .form-impression__title--title {
+    font-size: 21px;
+  }
+}
+
+.form-impression__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-impression-indicator {
+  position: relative;
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-right: 22px;
+  background-color: #f2f2f2;
+}
+
+.form-impression__input--radio:checked + .form-impression-indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-top: -11px;
+  margin-left: -11px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.form-impression-indicator--radio {
+  border-radius: 50%;
+}
