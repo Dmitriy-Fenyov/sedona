@@ -95,65 +95,70 @@
                     <label class="form-contact__label">электронная почта*:</label>
                     <input class="form-contact__input form-review--bold" type="text" placeholder="Введите e-mail"
                     name="e-mail" value="" required>
-                    <span class="form__icon form__icon--telephone"></span> 
+                    <span class="form__icon form__icon--email"></span> 
                 </p>
             </div>
             <div class="form-impression">
                 <h3 class="form-impression__title form-impression__title--title">ваше общее впечатление:</h3>
                   <label class="form-impression__label">
-                    <input class="form-impression__input form-impression__input--radio visually-hidden" type="radio" 
+                    <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
                     name="impression" value="good" checked>
                     <span class="form-impression-indicator form-impression-indicator--radio"></span>
                     <span class="form-impression-text"> Скорее  положительное </span>  
                   </label>
                   <label class="form-impression__label">
-                      <input class="fform-impression__input form-impression__input--ball visually-hidden" type="radio" 
+                      <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
                       name="impression" value="bad">
                       <span class="form-impression-indicator form-impression-indicator--radio"></span>
                       <span class="form-impression-text"> Скорее отрицательное </span> 
                   </label>
                   <label class="form-impression__label">
-                    <input class="form-impression__input form-impression__input--ball visually-hidden" type="radio" 
+                    <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
                      name="impression" value="difficult">
                      <span class="form-impression-indicator form-impression-indicator--radio"></span>
-                     <span class="form-impression-text"> Затрудняюсь ответить  </span>
+                     <span class="form-impression-text"> Затрудняюсь ответить </span>
                   </label>
             </div>
             <div class="form-places">
-                <h3 class="form-places__title">посещенные достопримечательности:</h3>
-                <ul>
-                    <li class="form-places__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input visually-hidden" type="checkbox" 
-                        name="bridge" checked>
-                        <span class="check-box"></span> Мост Дьявола </label>
-                    </li>
-                    <li class="form-contact__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input visually-hidden" type="checkbox"
-                        name="mountain" checked>
-                        <span class="check-box"></span> Гора-Колокол </label>
-                    </li>
-                    <li class="form-contact__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input visually-hidden" type="checkbox"
-                        name="park" checked> 
-                        <span class="check-box"></span> Слайд-парк </label>
-                    </li>
-                    <li class="form-contact__item">
-                        <label class="form-review--bold">
-                        <input class="form-impression__input visually-hidden" type="checkbox"
-                        name="rocks"> 
-                        <span class="check-box"></span> Красные скалы </label>
-                    </li>
-                </ul>
+              <h3 class="form-impression__title form-impression__title--title">посещенные достопримечательности:</h3>
+              <div class="form-places--wrapper">
+                <label class="form-impression__label form-impression__label--singhts">
+                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox" 
+                    name="bridge" value="positive" checked>
+                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
+                  <span class="check-box"> Мост Дьявола</span> 
+                </label>
+                <label class="form-impression__label form-impression__label--singhts">
+                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
+                  name="mountain" value="positive" checked>
+                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
+                  <span class="check-box"> Гора-Колокол </span>
+                </label>
+                <label class="form-impression__label form-impression__label--singhts">
+                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
+                  name="park" value="positive" checked>
+                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span> 
+                  <span class="check-box"> Слайд-парк </span>
+                </label>
+                <label class="form-impression__label form-impression__label--singhts">
+                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
+                  name="rocks" value="positive"> 
+                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
+                  <span class="check-box"> Красные скалы </span>
+                </label>
+              </div>
             </div>
             <div class="form-emotion">
-                <h3 class="form-emotion__title">опишите свои эмоции:</h3>
-                <input class="form-emotion__input" type="text" placeholder="Опишите подробно все свои восторги"
-                name="emotion" value="">
+                <h3 class="form-impression__title form-impression__title--title">опишите свои эмоции:</h3>
+                
+                <textarea class="form-emotion__input" name="emotion" placeholder="Опишите подробно все свои восторги"
+                name="emotion"></textarea>
+                
             </div>
-            <button class="booking__button booking__button--button" type="button">отправить отзыв</button>
+            <div class="wrapper-booking__button">
+              <button class="booking__button booking__button--button" type="button">отправить отзыв</button>
+              <span class="necessarily-field"> * — обязательные поля </span>
+            </div>
           </div>
         </form>
 
