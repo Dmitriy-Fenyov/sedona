@@ -6,6 +6,9 @@
     @media (min-width:768px) {
         padding-top: 50px;
     }
+    @media (min-width:1200px) {
+        padding-top: 100px;
+    }
 }
 
 .block-form__title--title {
@@ -22,6 +25,9 @@
     @media (min-width:768px) {
         padding: 0px 10px 80px 10px;
     }
+    @media (min-width:1200px) {
+        padding-bottom: 60px;
+    }
 }
 
 .form {
@@ -36,6 +42,9 @@
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 60px;
+    }
+    @media (min-width:1200px) {
+        margin: 0 120px;
     }
 }
 
@@ -60,13 +69,17 @@
             left: 0;
          }
     }
+    @media (min-width:1200px) {
+        padding-left: 80px;
+    }
+    
 }
 
 .form-review__title {
     text-align: center;
     margin: 20px 0 20px 0;
     @media (min-width:768px) {
-        margin: 0 0 40px 0;
+        margin: 0 0 50px 0;
     }
 }
 
@@ -84,6 +97,7 @@
     @media (min-width:768px) {
         margin: 0 0 20px 0;
     }
+    
 }
 
 .form-review__label {
@@ -107,13 +121,20 @@ padding-left: 10px;
     padding: 0 15px 25px 15px;
     border-bottom: 1px solid #d6d6d6;
     @media (min-width:768px) {
+        padding-top: 45px;
         border-bottom: none;
         grid-column: 1/-1;
     }
 }
 
+.hidden {
+    @media (min-width:1200px) {
+        display: none;
+    }
+}
+
 .form-contact__input {
-    width: 75%;
+    width: 100%;
     height: 58px;
     border: none;
     background-color: #f2f2f2;
@@ -122,14 +143,18 @@ padding-left: 10px;
     margin-top: 10px;
     
     @media (min-width:768px) {
-        width: 85%;
+        width: 100%;
+    }
+    @media (min-width:1200px) {
+        width: 315px;
+        margin-top: 0;
     }
 
 }
 
 .form-contact__title {
     text-align: center;
-    margin: 20px 0;
+    margin:0 0 20px 0;
     position: relative;
     @media (min-width:768px) {
         
@@ -152,6 +177,9 @@ padding-left: 10px;
             right: 0;
         }
     }
+    @media (min-width:1200px) {
+        margin-bottom: 70px;
+    }
 }
 
 .form-contact__title--title {
@@ -160,28 +188,52 @@ padding-left: 10px;
     @media (min-width:768px) {
         font-size: 21px;
     }
-
 }
 
 .form-contact__label {
     margin-left: 15px;
     line-height: 21px;
     display: block;
+    @media (min-width:1200px) {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+.form-contact--wrapper {
+    @media (min-width:1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .form-contact__item {
-    margin: 0;    
+    margin: 0;  
+    position: relative;
+    padding-right: 10px; 
+    @media (min-width:1200px) {
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 .form__icon {
     display: inline-block;
     width: 58px;
     height: 58px;
-    margin-left: -3px;
+    position: absolute;
+    top: 31px;
+    right: 0;
     vertical-align: middle;
     background-color: #e5e5e5;
     background-repeat: no-repeat;
     background-position: center;
+    @media (min-width:1200px) {
+        position: absolute;
+        top: 0;
+        right: 5px;
+    }
 }
 
 .form__icon--telephone {
@@ -206,7 +258,7 @@ padding-left: 10px;
     text-align: center;
     margin: 20px 0 40px;
     @media (min-width:768px) {
-        margin: 0 0 40px 0;
+        margin: 0 0 50px 0;
     }
 }
 
@@ -232,6 +284,10 @@ padding-left: 10px;
     @media (min-width:768px) {
         width: 230px;
     }
+    @media (min-width:1200px) {
+        width: auto;
+    }
+
 }
 
 .form-impression-indicator {
@@ -274,6 +330,10 @@ padding-left: 10px;
         grid-column: 1/-1;
         padding: 15px 15px 25px 15px;
     }
+    @media (min-width:1200px) {
+        margin-top: -20px;
+        padding-bottom: 70px;
+    }
 }
 
 .form-places--wrapper {
@@ -284,6 +344,10 @@ padding-left: 10px;
         width: 470px;
         margin: 50px auto 0;
         justify-content: space-between;
+    }
+    @media (min-width:1200px) {
+        width: auto;
+        margin-top: -20px;
     }
     
 }
@@ -328,6 +392,9 @@ padding-left: 10px;
     @media (min-width:768px) {
         margin-top: 30px;
     }
+    @media (min-width:1200px) {
+        margin-top: -10px;
+    }
     
 }
 
@@ -337,7 +404,7 @@ padding-left: 10px;
         display: flex;
         justify-content: space-between;
         padding: 0 15px;
-        margin-bottom: 60px;
+        margin-bottom: 65px;
     } 
 }
 
