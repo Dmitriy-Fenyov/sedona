@@ -80,7 +80,14 @@
 }
 
 .photo-block__image {
-  max-height: 280px;
+  height: 280px;
+  min-width: 280px;
+}
+
+@media (min-width: 1200px) {
+  .photo-block__image--big {
+    height: 400px;
+  }
 }
 
 .photo-block__title {

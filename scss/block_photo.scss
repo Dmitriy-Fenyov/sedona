@@ -66,8 +66,13 @@
     }
 }
 .photo-block__image {
-    max-height: 280px;
-    
+    height: 280px;
+    min-width: 280px;
+}
+.photo-block__image--big {
+    @media (min-width:1200px) {
+        height: 400px;
+    }
 }
 
 .photo-block__title {
