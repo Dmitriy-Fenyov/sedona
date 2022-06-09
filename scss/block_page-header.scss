@@ -18,6 +18,7 @@
             }
     }    
 }
+
 .site-list__item {
     margin: 0 auto;
     padding: 20px 0;
@@ -27,8 +28,24 @@
 .main-nav__list a {
     color: white;
     text-decoration: none;
+    
+    @media (max-width:767px) {
+        &:active {
+           color: rgba(256, 256, 256, 0.3);
+    
+        } 
+    }
     @media (min-width:768px) {
         color: black; 
+        &:hover {
+            color: #81B3D2;
+    
+        }
+    
+        &:active {
+            color: rgba(0, 0, 0, 0.3);
+    
+        }
     }
 }
 .site-list {
@@ -71,12 +88,39 @@
     width: 100%;
     font-weight: bold;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    @media (max-width:767px) {
+    &:hover {
+        background-color: #669EC0;
+
+    }
+
+    &:active {
+        background-color: #5496BD;
+
+    }
+}
     @media (min-width:768px) {
         border: none;
         background-color: #ffffff;
     }
 
 }
+
+.site-list__item--active a {
+    @media (min-width:768px) {
+        color: rgb(118, 99, 87);
+        &:hover {
+            color: rgb(96, 78, 67)
+    
+        }
+    
+        &:active {
+            color: rgba(118, 99, 87, 0.3);
+    
+        }
+    } 
+}
+
 .page-header__toggle {
     position: absolute;
     right: 5%;

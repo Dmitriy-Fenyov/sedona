@@ -78,9 +78,20 @@ img {
   color: white;
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  .main-nav__list a:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 @media (min-width: 768px) {
   .main-nav__list a {
     color: black;
+  }
+  .main-nav__list a:hover {
+    color: #81B3D2;
+  }
+  .main-nav__list a:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -138,10 +149,30 @@ img {
   font-weight: bold;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+@media (max-width: 767px) {
+  .bold:hover {
+    background-color: #669EC0;
+  }
+  .bold:active {
+    background-color: #5496BD;
+  }
+}
 @media (min-width: 768px) {
   .bold {
     border: none;
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-list__item--active a {
+    color: rgb(118, 99, 87);
+  }
+  .site-list__item--active a:hover {
+    color: rgb(96, 78, 67);
+  }
+  .site-list__item--active a:active {
+    color: rgba(118, 99, 87, 0.3);
   }
 }
 
@@ -495,6 +526,7 @@ img {
   padding-right: 50px;
   margin-bottom: 30px;
   text-align: center;
+  min-width: 235px;
 }
 @media (min-width: 768px) {
   .booking__description {
@@ -504,8 +536,14 @@ img {
 
 .booking__button {
   display: block;
+  width: 280px;
   margin: 0 auto;
   padding: 16px 20px 18px 20px;
+}
+@media (min-width: 768px) {
+  .booking__button {
+    width: 460px;
+  }
 }
 
 .booking__button--button {
@@ -517,6 +555,13 @@ img {
   border: none;
   text-transform: uppercase;
   align-items: center;
+}
+.booking__button--button:hover {
+  background-color: rgb(102, 158, 192);
+}
+.booking__button--button:active {
+  background-color: rgb(84, 150, 189);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .map {
