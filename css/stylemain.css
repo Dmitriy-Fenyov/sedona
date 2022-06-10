@@ -1,16 +1,16 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/web/ptsans.woff2") format("woff2"), url("fonts/web/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/web/ptsansbold.woff2") format("woff2"), url("fonts/web/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 img {
   max-width: 100%;
@@ -369,7 +369,7 @@ img {
 @media (min-width: 768px) {
   .features__item {
     min-height: 156px;
-    padding: 55px 20px 35px;
+    padding: 40px 20px 30px;
   }
 }
 
@@ -383,8 +383,8 @@ img {
 @media (min-width: 768px) {
   .features__item-2 {
     padding: 0;
-    padding-top: 158px;
-    padding-bottom: 41px;
+    padding-top: 118px;
+    padding-bottom: 40px;
     text-align: center;
   }
 }
@@ -411,11 +411,16 @@ img {
 
 @media (min-width: 768px) {
   .features__cause {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 220px;
     text-align: center;
     margin: 15px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .features__cause {
+    max-width: 260px;
   }
 }
 
@@ -494,13 +499,12 @@ img {
 
 .booking {
   min-width: 320px;
-  margin: auto;
-  padding-top: 35px;
-  padding-bottom: 50px;
+  margin: 35px auto 50px;
 }
 @media (min-width: 768px) {
   .booking {
     width: 100%;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -530,7 +534,7 @@ img {
 }
 @media (min-width: 768px) {
   .booking__description {
-    padding: 0 200px;
+    padding: 0 150px;
   }
 }
 
@@ -640,6 +644,15 @@ img {
   background-color: #81b3d2;
   text-decoration: none;
 }
+.footer-buttons__link:hover {
+  background-color: rgb(102, 158, 192);
+}
+.footer-buttons__link:active {
+  background-color: rgb(84, 150, 189);
+}
+.footer-buttons__link:active svg {
+  opacity: 0.3;
+}
 
 .footer-buttons__link--twitter {
   position: absolute;
@@ -684,7 +697,7 @@ img {
 .photo__title {
   text-align: center;
   padding: 30px 20px 30px 20px;
-  max-width: 350px;
+  max-width: 450px;
   margin: 0 auto 20px;
 }
 @media (min-width: 768px) {
@@ -699,6 +712,7 @@ img {
 @media (min-width: 768px) {
   .photo__title--title {
     font-size: 30px;
+    line-height: 26px;
   }
 }
 
@@ -862,6 +876,7 @@ img {
 }
 @media (min-width: 768px) {
   .video__title {
+    max-width: 400px;
     padding-top: 50px;
   }
 }
@@ -874,7 +889,7 @@ img {
 }
 @media (min-width: 768px) {
   .video__intro {
-    max-width: 370px;
+    max-width: 390px;
     margin-bottom: 80px;
   }
 }
@@ -911,6 +926,7 @@ img {
   .video-frame__options {
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: -99px;
   }
 }
 @media (min-width: 1200px) {
@@ -977,9 +993,16 @@ img {
 .video-frame__repeat {
   border: none;
   cursor: pointer;
-  fill: #5C6870;
+  fill: rgb(92, 104, 112);
   padding: 0;
   margin-left: 20px;
+}
+.video-frame__repeat:hover {
+  fill: rgb(51, 51, 51);
+}
+.video-frame__repeat:active {
+  fill: rgb(51, 51, 51);
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   .video-frame__repeat {
@@ -987,6 +1010,14 @@ img {
     fill: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .video-frame__repeat:hover {
+    fill: rgb(255, 255, 255);
+    opacity: 0.6;
+  }
+  .video-frame__repeat:active {
+    fill: rgb(255, 255, 255);
+    opacity: 0.3;
   }
 }
 
@@ -998,10 +1029,25 @@ img {
   margin-left: auto;
   margin-right: 4.5%;
 }
+.video-frame__subtitles:hover {
+  fill: rgb(51, 51, 51);
+}
+.video-frame__subtitles:active {
+  fill: rgb(51, 51, 51);
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .video-frame__subtitles {
     background-color: transparent;
     fill: #ffffff;
+  }
+  .video-frame__subtitles:hover {
+    fill: rgb(255, 255, 255);
+    opacity: 0.6;
+  }
+  .video-frame__subtitles:active {
+    fill: rgb(255, 255, 255);
+    opacity: 0.3;
   }
 }
 
@@ -1012,11 +1058,26 @@ img {
   padding: 0;
   margin-right: 20px;
 }
+.video-frame__fullscreen:hover {
+  fill: rgb(51, 51, 51);
+}
+.video-frame__fullscreen:active {
+  fill: rgb(51, 51, 51);
+  opacity: 0.3;
+}
 @media (min-width: 768px) {
   .video-frame__fullscreen {
     background-color: transparent;
     fill: #ffffff;
     margin-right: 6.2%;
+  }
+  .video-frame__fullscreen:hover {
+    fill: rgb(255, 255, 255);
+    opacity: 0.6;
+  }
+  .video-frame__fullscreen:active {
+    fill: rgb(255, 255, 255);
+    opacity: 0.3;
   }
 }
 
@@ -1052,6 +1113,7 @@ img {
 @media (min-width: 768px) {
   .block-form__intro {
     padding: 0px 10px 80px 10px;
+    max-width: 440px;
   }
 }
 @media (min-width: 1200px) {
@@ -1152,10 +1214,23 @@ img {
   border: none;
   background-color: #f2f2f2;
 }
+.form-review__input:hover {
+  background-color: rgb(229, 229, 229);
+}
+.form-review__input:focus {
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(229, 229, 229);
+  outline: none;
+  box-sizing: border-box;
+}
+.form-review__input::placeholder {
+  color: rgb(0, 0, 0);
+}
 
 .form-review--bold {
   color: #000000;
   padding-left: 10px;
+  font-weight: bold;
 }
 
 .form-contact {
@@ -1185,6 +1260,18 @@ img {
   margin-bottom: 15px;
   margin-top: 10px;
 }
+.form-contact__input:hover {
+  background-color: rgb(229, 229, 229);
+}
+.form-contact__input:focus {
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(229, 229, 229);
+  outline: none;
+  box-sizing: border-box;
+}
+.form-contact__input::placeholder {
+  color: rgb(0, 0, 0);
+}
 @media (min-width: 768px) {
   .form-contact__input {
     width: 100%;
@@ -1194,6 +1281,7 @@ img {
   .form-contact__input {
     width: 315px;
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1445,14 +1533,25 @@ img {
 .form-emotion__input {
   width: 100%;
   min-width: 0;
-  padding-top: 20px;
-  padding-left: 10px;
   font-weight: bold;
   font-size: 18px;
+  padding-top: 20px;
+  padding-left: 10px;
   background-color: #f2f2f2;
   border: none;
   min-height: 160px;
   resize: none;
+}
+.form-emotion__input:hover {
+  background-color: rgb(229, 229, 229);
+}
+.form-emotion__input:focus {
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(229, 229, 229);
+  outline: none;
+}
+.form-emotion__input::placeholder {
+  color: rgb(0, 0, 0);
 }
 @media (min-width: 768px) {
   .form-emotion__input {

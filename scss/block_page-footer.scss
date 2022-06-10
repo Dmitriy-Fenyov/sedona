@@ -47,7 +47,18 @@ position: relative;
 width: 48px;
 height: 48px;
 background-color: #81b3d2;
-text-decoration: none;    
+text-decoration: none; 
+&:hover {
+    background-color: rgb(102, 158, 192);
+
+}
+
+&:active {
+    background-color: rgb(84, 150, 189);
+    svg {
+        opacity: 0.3;
+      }
+}   
 }
 
 .footer-buttons__link--twitter {

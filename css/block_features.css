@@ -72,7 +72,7 @@
 @media (min-width: 768px) {
   .features__item {
     min-height: 156px;
-    padding: 55px 20px 35px;
+    padding: 40px 20px 30px;
   }
 }
 
@@ -86,8 +86,8 @@
 @media (min-width: 768px) {
   .features__item-2 {
     padding: 0;
-    padding-top: 158px;
-    padding-bottom: 41px;
+    padding-top: 118px;
+    padding-bottom: 40px;
     text-align: center;
   }
 }
@@ -114,11 +114,16 @@
 
 @media (min-width: 768px) {
   .features__cause {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 220px;
     text-align: center;
     margin: 15px auto;
+  }
+}
+@media (min-width: 1200px) {
+  .features__cause {
+    max-width: 260px;
   }
 }
 

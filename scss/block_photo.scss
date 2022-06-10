@@ -1,7 +1,7 @@
 .photo__title {
     text-align: center;
     padding: 30px 20px 30px 20px;
-    max-width: 350px;
+    max-width: 450px;
     margin: 0 auto 20px;
     @media (min-width:768px) {
         padding: 40px 150px 40px 150px;
@@ -12,6 +12,7 @@
     font-size: 18px;
     @media (min-width:768px) {
         font-size: 30px;
+        line-height: 26px;
     }
 }
 

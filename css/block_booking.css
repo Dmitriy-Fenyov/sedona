@@ -1,12 +1,11 @@
 .booking {
   min-width: 320px;
-  margin: auto;
-  padding-top: 35px;
-  padding-bottom: 50px;
+  margin: 35px auto 50px;
 }
 @media (min-width: 768px) {
   .booking {
     width: 100%;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -36,7 +35,7 @@
 }
 @media (min-width: 768px) {
   .booking__description {
-    padding: 0 200px;
+    padding: 0 150px;
   }
 }
 

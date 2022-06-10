@@ -55,6 +55,15 @@
   background-color: #81b3d2;
   text-decoration: none;
 }
+.footer-buttons__link:hover {
+  background-color: rgb(102, 158, 192);
+}
+.footer-buttons__link:active {
+  background-color: rgb(84, 150, 189);
+}
+.footer-buttons__link:active svg {
+  opacity: 0.3;
+}
 
 .footer-buttons__link--twitter {
   position: absolute;

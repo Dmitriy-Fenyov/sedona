@@ -4,6 +4,7 @@
     max-width: 350px;
     margin: 0 auto;
     @media (min-width:768px) {
+        max-width: 400px;
         padding-top: 50px;
      } 
 }
@@ -15,13 +16,13 @@
     text-align: center;
     margin-bottom: 30px;
     @media (min-width:768px) {
-       max-width: 370px;
+       max-width: 390px;
        margin-bottom: 80px;
     } 
 }
 
 .video-frame--wrapper {
-  padding:0 20px ;
+  padding:0 20px;
     @media (min-width:768px) {
         padding: 0 60px;
      }
@@ -45,6 +46,7 @@
   @media (min-width:768px) {
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: -99px;
  }
   @media (min-width:1200px) {
   padding-left: 200px;
@@ -108,15 +110,33 @@
 .video-frame__repeat {
   border: none;
   cursor: pointer;
-  fill: #5C6870;
+  fill: rgb(92, 104, 112);
   padding: 0;
   margin-left: 20px;
+  &:hover {
+    fill: rgb(51, 51, 51);
+
+}
+
+&:active {
+  fill: rgb(51, 51, 51);
+    opacity: 0.3;
+}
   @media (min-width:768px) {
     background-color: transparent;
     fill: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
+    &:hover {
+      fill: rgb(255, 255, 255);
+      opacity: 0.6;
   }
+  
+  &:active {
+    fill: rgb(255, 255, 255);
+      opacity: 0.3;
+  }
+}
 }
 
 .video-frame__subtitles {
@@ -126,9 +146,27 @@
   padding: 0;
   margin-left: auto;
   margin-right: 4.5%;
+  &:hover {
+    fill: rgb(51, 51, 51);
+
+}
+
+&:active {
+  fill: rgb(51, 51, 51);
+    opacity: 0.3;
+}
   @media (min-width:768px) {
     background-color: transparent;
     fill: #ffffff;
+    &:hover {
+      fill: rgb(255, 255, 255);
+      opacity: 0.6;
+  }
+  
+  &:active {
+    fill: rgb(255, 255, 255);
+      opacity: 0.3;
+  }
     
   }
 
@@ -140,9 +178,27 @@
   fill: #5C6870;
   padding: 0;
   margin-right: 20px;
+  &:hover {
+    fill: rgb(51, 51, 51);
+
+}
+
+&:active {
+  fill: rgb(51, 51, 51);
+    opacity: 0.3;
+}
   @media (min-width:768px) {
     background-color: transparent;
     fill: #ffffff;
     margin-right: 6.2%;
+    &:hover {
+      fill: rgb(255, 255, 255);
+      opacity: 0.6;
+  }
+  
+  &:active {
+    fill: rgb(255, 255, 255);
+      opacity: 0.3;
+  }
     }
   }
