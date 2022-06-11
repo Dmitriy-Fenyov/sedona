@@ -38,13 +38,6 @@
       width: 22px;
       height: 3px;
       background-color: rgb(256, 256, 256);
-        &:active {
-            background-color: rgba(256, 256, 256, 0.3);
-        }
-        &:hover {
-            background-color: rgba(256, 256, 256, 0.6);
-        }
-
     }
   
     &::before {
@@ -202,7 +195,7 @@
 .open {
     display: none;
     @media (min-width:768px){
-        display: block;
+        display: inline-block;
     }
 
 }

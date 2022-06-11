@@ -40,12 +40,6 @@
   height: 3px;
   background-color: rgb(255, 255, 255);
 }
-.main-nav_close-button::before:active, .main-nav_close-button::after:active {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.main-nav_close-button::before:hover, .main-nav_close-button::after:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
 .main-nav_close-button::before {
   transform: rotate(45deg);
 }
@@ -208,7 +202,7 @@
 }
 @media (min-width: 768px) {
   .open {
-    display: block;
+    display: inline-block;
   }
 }
 

@@ -7,22 +7,23 @@
     <meta name="description" content="Расскажем о Седоне, её преимуществах, а также поможем забронировать гостинницу">
     <title>Sedona - небольшой городок в Аризоне</title>   <!--заголовок сайта-->
     <link rel="stylesheet" href="css/stylemain.css">
+    <link rel="preload" href="/source/img/bg-back-mobile@1x.jpg" as="image">
     <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav_close-button" type="button">
+        <button class="main-nav_close-button open" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active bold" >
+            <li class="site-list__item bold site-list__item--active open" >
               <a href="index.html">
                 главная
               </a>
             </li>
-            <li class="site-list__item bold ">
+            <li class="site-list__item bold open ">
               <a href="photo.html">
                 фото и видео
               </a>
@@ -39,12 +40,12 @@
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </li>
-            <li class="site-list__item bold ">
+            <li class="site-list__item bold open">
               <a href="form.html">
                 форма отзыва
               </a>
             </li>
-            <li class="site-list__item bold shadow ">
+            <li class="site-list__item bold open shadow ">
               <a href="#">
                 найти гостинницу
               </a>
@@ -176,18 +177,6 @@
       </div>
     </footer>
 
-    <!--<script>
-      const button=document.querySelector(".page-header__toggle--toggle");
-      const popup=document.querySelector(".site-list__item");
-
-      button.addEventListener("click", function(evt){
-    if(popup.classList.contains("open")) {
-            evt.preventDefault(); 
-            popup.classList.remove("open")}
-            else {popup.classList.add("open");}
-    come.focus();
-});
-    
-      </script>-->
+      <script src="js/open-menu.js" charset="utf-8"></script>
   </body>
 </html>

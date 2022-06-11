@@ -12,14 +12,17 @@
   <body class="page__body">
     <header class="page-header">
       <nav class="main-nav">
+        <button class="main-nav_close-button open" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item bold" >
+            <li class="site-list__item bold open" >
               <a href="index.html">
                 главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active bold ">
+            <li class="site-list__item site-list__item--active bold open ">
               <a href="photo.html">
                 фото и видео
               </a>
@@ -36,12 +39,12 @@
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </li>
-            <li class="site-list__item bold ">
+            <li class="site-list__item bold open">
               <a href="form.html">
                 форма отзыва
               </a>
             </li>
-            <li class="site-list__item bold shadow ">
+            <li class="site-list__item bold shadow open">
               <a href="#">
                 найти гостинницу
               </a>
@@ -246,6 +249,8 @@
           </a>
       </div>
     </footer>
+
+    <script src="js/open-menu.js" charset="utf-8"></script>
 
   </body>
 </html>
