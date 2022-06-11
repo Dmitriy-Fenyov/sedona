@@ -52,7 +52,9 @@
 .form-review {
     padding: 0 15px 25px 15px;
     border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 20px;
     @media (min-width:768px) {
+        margin-bottom: 0px;
         border-bottom: none;
          grid-column: 2/3;
          position: relative;
@@ -141,6 +143,9 @@ font-weight: bold;
         border-bottom: none;
         grid-column: 1/-1;
     }
+    @media (min-width:1200px) {
+        margin-bottom: 25px;
+    }
 }
 
 .hidden {
@@ -177,7 +182,7 @@ font-weight: bold;
     @media (min-width:1200px) {
         width: 315px;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom : 0;
     }
 
 }
@@ -277,7 +282,9 @@ font-weight: bold;
 .form-impression {
     padding: 0 15px 25px 15px;
     border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 20px;
     @media (min-width:768px) {
+        margin-bottom: 0px;
         border-bottom: none;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -355,7 +362,9 @@ font-weight: bold;
 .form-places {
     padding: 0 15px 25px 15px;
     border-bottom: 1px solid #d6d6d6;
+    margin-bottom: 20px;
     @media (min-width:768px) {
+        margin-bottom: 0px;
         border-bottom: none;
         grid-column: 1/-1;
         padding: 15px 15px 25px 15px;
