@@ -76,18 +76,18 @@
                 <h2 class="form-review__title form-review__title--title">представьтесь:</h2>
                 <p class="form-review__item">
                     <label class="form-review__label">имя*:</label>
-                    <input class="form-review__input form-review--bold" type="text" placeholder="Пётр"
-                    name="firstname" value="" required>
+                    <input class="form-review__input form-review--bold js-input-name" type="text" placeholder="Пётр"
+                    name="firstname" value="" required minlength="2" maxlength="25">
                 </p>
                 <p class="form-review__item">
                     <label class="form-review__label">фамилия*:</label>
-                    <input class="form-review__input form-review--bold" type="text" placeholder="Иванов"
-                    name="secondname" value="" required> 
+                    <input class="form-review__input form-review--bold js-input-secondname" type="text" placeholder="Иванов"
+                    name="secondname" value="" required minlength="2" maxlength="25"> 
                 </p>
                 <p class="form-review__item">
                     <label class="form-review__label">отчество:</label>
                     <input class="form-review__input form-review--bold" type="text" placeholder="Александрович"
-                    name="thirdname" value=""> 
+                    name="thirdname" value="" maxlength="25"> 
                 </p>
             </div>
             <div class="form-contact">
@@ -95,14 +95,14 @@
                 <div class="form-contact--wrapper">
                   <p class="form-contact__item">
                       <label class="form-contact__label"> <span class="hidden">контактный</span> телефон*:</label>
-                      <input class="form-contact__input form-review--bold" type="text" placeholder="Введите телефон"
-                      name="phome-number" value="" required>
+                      <input class="form-contact__input form-review--bold js-input-num" type="text" placeholder="Введите телефон"
+                      name="phome-number" value="" required minlength="5" maxlength="25">
                       <span class="form__icon form__icon--telephone"></span> 
                   </p>
                   <p class="form-contact__item">
                       <label class="form-contact__label">электронная почта*:</label>
-                      <input class="form-contact__input form-review--bold" type="text" placeholder="Введите e-mail"
-                      name="e-mail" value="" required>
+                      <input class="form-contact__input form-review--bold js-input-mail" type="text" placeholder="Введите e-mail"
+                      name="e-mail" value="" required minlength="6">
                       <span class="form__icon form__icon--email"></span> 
                   </p>
                 </div>
@@ -215,7 +215,7 @@
         <div class="popup_content">
           <button class="popup_close" type="button">X</button>
           <div class="popup_title">Спасибо за отзыв</div>
-          <div class="popup_text"> текст заглушкатекст заглушкатекст заглушкатекст заглушкатекст заглушкатекст заглушка </div>
+          <div class="popup_text">  </div>
         </div>
       </div>
     </div>
