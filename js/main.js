@@ -15,37 +15,31 @@ const closing = document.querySelector(".main-nav_close-button");
 
 const popup = document.querySelector(".popup");
 const popupButton = document.querySelector(".form-button");
-const popupClose = document.querySelector(".popup_close");
-//const impression = document.querySelectorAll(".form-impression__input--radio"); 
+const popupClose = document.querySelector(".popup_close"); 
 
 popupButton.addEventListener("click", function() {
-          popup.classList.add("popup-open");
-          let radio = document.querySelectorAll(".form-impression__input--radio");
-          for (let i = 0; i < radio.length; i++) {
-          if (radio[0] = true) {
+          if (document.getElementById("good").checked === true) {
             document.querySelector(".popup_text").innerHTML = 'Безумно рады что Вам понравилось, приезжайте к нам еще!';
-            break
           }
-          if (radio[1] = true) {
-            document.querySelector(".popup_text").innerHTML = 'Нам очень жаль, что у Вас сложилось такое впечатление. Мы обязательно учтём все пожелания, чтобы в следующий раз Вам у нас понравилось.';
-            break    
+           else if (document.getElementById("bad").checked === true) {
+            document.querySelector(".popup_text").innerHTML = 'Нам очень жаль, что у Вас сложилось такое впечатление. Мы обязательно учтём все пожелания, чтобы в следующий раз Вам у нас понравилось.';    
             }
           else {
             document.querySelector(".popup_text").innerHTML = 'В следующий раз мы обязательно придумаем как Вас порадовать, приезжайте к нам еще!'
-          }}
-           
+          }
+          popup.classList.add("popup-open");
           
           document.addEventListener("keydown", function (evt) {
             if (evt.key === ("Escape"||"Esc")) {
             popup.classList.remove("popup-open")    
             }
             }); 
-      });
+});
 
 popupClose.addEventListener("click", function() {
       popup.classList.remove("popup-open")  
       });
-
+      
 // Проверка на валидацию формы
 
 const userNameInput = document.querySelector('.js-input-name');

@@ -95,13 +95,13 @@
                 <div class="form-contact--wrapper">
                   <p class="form-contact__item">
                       <label class="form-contact__label"> <span class="hidden">контактный</span> телефон*:</label>
-                      <input class="form-contact__input form-review--bold js-input-num" type="text" placeholder="Введите телефон"
+                      <input class="form-contact__input form-review--bold js-input-num" type=" tel" placeholder="Введите телефон"
                       name="phome-number" value="" required minlength="5" maxlength="25">
                       <span class="form__icon form__icon--telephone"></span> 
                   </p>
                   <p class="form-contact__item">
                       <label class="form-contact__label">электронная почта*:</label>
-                      <input class="form-contact__input form-review--bold js-input-mail" type="text" placeholder="Введите e-mail"
+                      <input class="form-contact__input form-review--bold js-input-mail" type="email" placeholder="Введите e-mail"
                       name="e-mail" value="" required minlength="6">
                       <span class="form__icon form__icon--email"></span> 
                   </p>
@@ -111,19 +111,19 @@
                 <h3 class="form-impression__title form-impression__title--title">ваше общее впечатление:</h3>
                   <label class="form-impression__label">
                     <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
-                    name="impression" value="good" checked>
+                    name="impression" value="good" id="good" checked>
                     <span class="form-impression-indicator form-impression-indicator--radio"></span>
                     <span class="form-impression-text"> Скорее  положительное </span>  
                   </label>
                   <label class="form-impression__label">
                       <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
-                      name="impression" value="bad">
+                      name="impression" value="bad" id="bad">
                       <span class="form-impression-indicator form-impression-indicator--radio"></span>
                       <span class="form-impression-text"> Скорее отрицательное </span> 
                   </label>
                   <label class="form-impression__label">
                     <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
-                     name="impression" value="difficult">
+                     name="impression" value="difficult" id="difficult">
                      <span class="form-impression-indicator form-impression-indicator--radio"></span>
                      <span class="form-impression-text"> Затрудняюсь ответить </span>
                   </label>
@@ -215,7 +215,7 @@
         <div class="popup_content">
           <button class="popup_close" type="button">X</button>
           <div class="popup_title">Спасибо за отзыв</div>
-          <div class="popup_text">  </div>
+          <div class="popup_text"></div>
         </div>
       </div>
     </div>
