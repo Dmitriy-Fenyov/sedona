@@ -908,6 +908,11 @@ img {
   text-transform: none;
 }
 
+.liked {
+  fill: red;
+  opacity: 1;
+}
+
 .video__title {
   text-align: center;
   padding: 30px 20px 30px 20px;

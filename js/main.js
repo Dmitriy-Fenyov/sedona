@@ -11,7 +11,33 @@ const closing = document.querySelector(".main-nav_close-button");
       opening.forEach(x => x.classList.toggle("open"));  
 },{passive: true});
 
+
+// Счетчик лайков
+
+const likes = document.querySelectorAll('.js-like');
+const likesNumbers = document.querySelectorAll('output');
+
+likes.forEach (likes => {
+  likes.addEventListener('click', function() {
+    
+      if(likes.classList.contains('liked')) {
+          likes.classList.remove('liked');
+          for (let likesNumber of likesNumbers) {
+            likesNumber.textContent--;
+          }
+          
+      }
+      else {
+        likesNumbers.textContent++;
+          likes.classList.add('liked');
+          for (let likesNumber of likesNumbers) {
+            likesNumber.textContent++;
+          }
+      }
+})
+});
 // Открытие/закрытие попапа и создание текста внутри попапа в зависимости от отзыва
+  
 
 const popup = document.querySelector(".popup");
 const popupButton = document.querySelector(".form-button");
@@ -28,7 +54,7 @@ popupButton.addEventListener("click", function() {
             document.querySelector(".popup_text").innerHTML = 'В следующий раз мы обязательно придумаем как Вас порадовать, приезжайте к нам еще!'
           }
           popup.classList.add("popup-open");
-          
+        
           document.addEventListener("keydown", function (evt) {
             if (evt.key === ("Escape"||"Esc")) {
             popup.classList.remove("popup-open")    
@@ -38,8 +64,12 @@ popupButton.addEventListener("click", function() {
 
 popupClose.addEventListener("click", function() {
       popup.classList.remove("popup-open")  
-      });
-      
+});
+
+window.addEventListener("click", function () {
+        popup.classList.remove("popup-open")  
+        console.log ('gjgfg pfrhsn')
+});
 // Проверка на валидацию формы
 
 const userNameInput = document.querySelector('.js-input-name');
@@ -107,3 +137,7 @@ userMailInput.addEventListener('input', () => {
 
   userMailInput.reportValidity();
 });
+
+
+// Счетчик лайков
+

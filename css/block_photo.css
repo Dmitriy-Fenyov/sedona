@@ -171,3 +171,8 @@
 .photo-block__author--size {
   text-transform: none;
 }
+
+.liked {
+  fill: red;
+  opacity: 1;
+}
