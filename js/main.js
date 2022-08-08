@@ -44,10 +44,10 @@ const popupButton = document.querySelector(".form-button");
 const popupClose = document.querySelector(".popup_close"); 
 
 popupButton.addEventListener("click", function() {
-          if (document.getElementById("good").checked === true) {
+          if (document.getElementById("good").checked) {
             document.querySelector(".popup_text").innerHTML = 'Безумно рады что Вам понравилось, приезжайте к нам еще!';
           }
-           else if (document.getElementById("bad").checked === true) {
+           else if (document.getElementById("bad").checked) {
             document.querySelector(".popup_text").innerHTML = 'Нам очень жаль, что у Вас сложилось такое впечатление. Мы обязательно учтём все пожелания, чтобы в следующий раз Вам у нас понравилось.';    
             }
           else {
@@ -60,16 +60,17 @@ popupButton.addEventListener("click", function() {
             popup.classList.remove("popup-open")    
             }
             }); 
+            document.addEventListener("mousedown", function (e) {
+              if(e.target.closest(".popup_content")=== null) {
+              popup.classList.remove("popup-open")
+              console.log ('gjgfg pfrhsn')}
+            });
+
+            popupClose.addEventListener("click", function() {
+                popup.classList.remove("popup-open")  
+            });
 });
 
-popupClose.addEventListener("click", function() {
-      popup.classList.remove("popup-open")  
-});
-
-window.addEventListener("click", function () {
-        popup.classList.remove("popup-open")  
-        console.log ('gjgfg pfrhsn')
-});
 // Проверка на валидацию формы
 
 const userNameInput = document.querySelector('.js-input-name');
@@ -139,5 +140,5 @@ userMailInput.addEventListener('input', () => {
 });
 
 
-// Счетчик лайков
+
 
