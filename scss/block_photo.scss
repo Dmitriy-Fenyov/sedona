@@ -36,16 +36,15 @@
         padding-left: 60px;
         padding-right: 60px;
         grid-template-columns: repeat(2, 1fr);
-        :nth-child(1) {
-            grid-column: 1 / -1;
-          }
+            :nth-child(1) {
+                grid-column: 1 / -1;
+            }
     }
     @media (min-width:1200px) {
         padding-left: 60px;
         padding-right: 60px;
         grid-template-columns: repeat(3, 1fr);
     }
-
 }
 
 .photo-block__item {
@@ -62,8 +61,7 @@
     }
     @media (min-width:1200px) {
         position: relative;
-        margin-bottom: -6px;
-        
+        margin-bottom: -6px;  
     }
 }
 .photo-block__image {
@@ -105,14 +103,13 @@ margin-bottom: 20px;
         max-width: 1080px;
         width: 100%;
         padding: 0;
-        
     }
 }
 
 
 .bg-wrapper {
     @media (min-width:768px) {
-       background-color: #f2f2f2;
+        background-color: #f2f2f2;
     }
     @media (min-width:1200px) {
         background-color: rgba(0, 0, 0, 0.3);

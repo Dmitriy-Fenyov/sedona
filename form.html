@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Побывали в Седоне? Оставьте ваш отзыв о нашем городе">
-    <title>Sedona - небольшой городок в Аризоне</title>   <!--заголовок сайта-->
+    <title>Sedona - небольшой городок в Аризоне</title> 
     <link rel="stylesheet" href="css/stylemain.css">
     <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
   </head>
@@ -17,14 +17,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item bold open" >
+            <li class="site-list__item site-list__item--item open" >
               <a href="index.html">
-                главная
+                Главная
               </a>
             </li>
-            <li class="site-list__item bold open">
+            <li class="site-list__item site-list__item--item open">
               <a href="photo.html">
-                фото и видео
+                Фото и видео
               </a>
             </li>
             <li class="site-list__item page-header__logo">
@@ -32,21 +32,21 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-                  <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Лого Седона" width="102" height="83">
+                  <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Город Седона" width="102" height="83">
                 </picture>
               </a>
               <button class="page-header__toggle page-header__toggle--toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </li>
-            <li class="site-list__item site-list__item--active bold open">
+            <li class="site-list__item site-list__item--active site-list__item--item open">
               <a href="form.html">
-                форма отзыва
+                Форма отзыва
               </a>
             </li>
-            <li class="site-list__item bold shadow open">
+            <li class="site-list__item site-list__item--item site-list__item--shadow open">
               <a href="#">
-                найти гостинницу
+                Найти гостинницу
               </a>
             </li>
           </ul>
@@ -55,160 +55,153 @@
     </header> 
 
     <main class="page-main">
-        <h1 class="visually-hidden">
-            Отзывы о Седоне
-        </h1>
-        <div class="view view--bg-back">
-            <div class="view__promo view__promo--text"></div>
-            <div class="view__mask view__mask--mask"></div>
+      <h1 class="visually-hidden">
+        Отзывы о Седоне
+      </h1>
+      <div class="view view--bg-back">
+        <div class="view__promo view__promo--text"></div>
+        <div class="view__mask view__mask--mask"></div>
+      </div>
+      <section class="block-form">
+        <h2 class="block-form__title block-form__title--title">
+          Оставьте свой отзыв
+        </h2>
+        <p class="block-form__intro block-form__intro--intro">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+      </section>
+      <form class="form" method="post" action="#" autocomplete="off">
+        <div class="form-review">
+          <h2 class="form-review__title form-review__title--title">Представьтесь:</h2>
+          <p class="form-review__item">
+            <label class="form-review__label">Имя*:</label>
+            <input class="form-review__input form-review--bold js-input-name" type="text" placeholder="Пётр"
+            name="firstname" value="" required minlength="2" maxlength="25">
+          </p>
+          <p class="form-review__item">
+            <label class="form-review__label">Фамилия*:</label>
+            <input class="form-review__input form-review--bold js-input-secondname" type="text" placeholder="Иванов"
+            name="secondname" value="" required minlength="2" maxlength="25"> 
+          </p>
+          <p class="form-review__item">
+            <label class="form-review__label">Отчество:</label>
+            <input class="form-review__input form-review--bold" type="text" placeholder="Александрович"
+            name="thirdname" value="" maxlength="25"> 
+          </p>
         </div>
-        <section class="block-form">
-            <h2 class="block-form__title block-form__title--title">
-              оставьте свой отзыв
-            </h2>
-            <p class="block-form__intro block-form__intro--intro">
-              помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        <div class="form-contact">
+          <h3 class="form-contact__title form-contact__title--title">Контактная информация:</h3>
+          <div class="form-contact--wrapper">
+            <p class="form-contact__item">
+              <label class="form-contact__label"> <span class="hidden">Контактный</span> телефон*:</label>
+              <input class="form-contact__input form-review--bold js-input-num" type="tel" placeholder="Введите телефон"
+              name="phome-number" value="" required minlength="5" maxlength="25">
+              <span class="form__icon form__icon--telephone"></span> 
             </p>
-        </section>
-        <form class="form" method="post" action="#" autocomplete="off">
-          <div class="form-wrapper">
-            <div class="form-review">
-                <h2 class="form-review__title form-review__title--title">представьтесь:</h2>
-                <p class="form-review__item">
-                    <label class="form-review__label">имя*:</label>
-                    <input class="form-review__input form-review--bold js-input-name" type="text" placeholder="Пётр"
-                    name="firstname" value="" required minlength="2" maxlength="25">
-                </p>
-                <p class="form-review__item">
-                    <label class="form-review__label">фамилия*:</label>
-                    <input class="form-review__input form-review--bold js-input-secondname" type="text" placeholder="Иванов"
-                    name="secondname" value="" required minlength="2" maxlength="25"> 
-                </p>
-                <p class="form-review__item">
-                    <label class="form-review__label">отчество:</label>
-                    <input class="form-review__input form-review--bold" type="text" placeholder="Александрович"
-                    name="thirdname" value="" maxlength="25"> 
-                </p>
-            </div>
-            <div class="form-contact">
-                <h3 class="form-contact__title form-contact__title--title">контактная информация:</h3>
-                <div class="form-contact--wrapper">
-                  <p class="form-contact__item">
-                      <label class="form-contact__label"> <span class="hidden">контактный</span> телефон*:</label>
-                      <input class="form-contact__input form-review--bold js-input-num" type=" tel" placeholder="Введите телефон"
-                      name="phome-number" value="" required minlength="5" maxlength="25">
-                      <span class="form__icon form__icon--telephone"></span> 
-                  </p>
-                  <p class="form-contact__item">
-                      <label class="form-contact__label">электронная почта*:</label>
-                      <input class="form-contact__input form-review--bold js-input-mail" type="email" placeholder="Введите e-mail"
-                      name="e-mail" value="" required minlength="6">
-                      <span class="form__icon form__icon--email"></span> 
-                  </p>
-                </div>
-            </div>
-            <div class="form-impression">
-                <h3 class="form-impression__title form-impression__title--title">ваше общее впечатление:</h3>
-                  <label class="form-impression__label">
-                    <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
-                    name="impression" value="good" id="good" checked>
-                    <span class="form-impression-indicator form-impression-indicator--radio"></span>
-                    <span class="form-impression-text"> Скорее  положительное </span>  
-                  </label>
-                  <label class="form-impression__label">
-                      <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
-                      name="impression" value="bad" id="bad">
-                      <span class="form-impression-indicator form-impression-indicator--radio"></span>
-                      <span class="form-impression-text"> Скорее отрицательное </span> 
-                  </label>
-                  <label class="form-impression__label">
-                    <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
-                     name="impression" value="difficult" id="difficult">
-                     <span class="form-impression-indicator form-impression-indicator--radio"></span>
-                     <span class="form-impression-text"> Затрудняюсь ответить </span>
-                  </label>
-            </div>
-            <div class="form-places">
-              <h3 class="form-contact__title form-contact__title--title">посещенные <br> достопримечательности:</h3>
-              <div class="form-places--wrapper">
-                <label class="form-impression__label form-impression__label--singhts">
-                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox" 
-                    name="bridge" value="positive" checked>
-                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
-                  <span class="check-box"> Мост Дьявола</span> 
-                </label>
-                <label class="form-impression__label form-impression__label--singhts">
-                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
-                  name="mountain" value="positive" checked>
-                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
-                  <span class="check-box"> Гора-Колокол </span>
-                </label>
-                <label class="form-impression__label form-impression__label--singhts">
-                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
-                  name="park" value="positive" checked>
-                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span> 
-                  <span class="check-box"> Слайд-парк </span>
-                </label>
-                <label class="form-impression__label form-impression__label--singhts">
-                  <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
-                  name="rocks" value="positive"> 
-                  <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
-                  <span class="check-box"> Красные скалы </span>
-                </label>
-              </div>
-            </div>
-            <div class="form-emotion">
-                <h3 class="form-contact__title form-contact__title--title">опишите свои эмоции:</h3>
-                
-                <textarea class="form-emotion__input" name="emotion" placeholder="Опишите подробно все свои восторги"
-                name="emotion"></textarea>
-                
-            </div>
-            <div class="form-button--wrapper">
-              <button class="form-button booking__button--button" type="button">отправить отзыв</button>
-              <span class="necessarily-field"> * — обязательные поля </span>
-            </div>
+            <p class="form-contact__item">
+              <label class="form-contact__label">Электронная почта*:</label>
+              <input class="form-contact__input form-review--bold js-input-mail" type="email" placeholder="Введите e-mail"
+              name="e-mail" value="" required minlength="6">
+              <span class="form__icon form__icon--email"></span> 
+            </p>
           </div>
-        </form>
-
-        
+        </div>
+        <div class="form-impression">
+          <h3 class="form-impression__title form-impression__title--title">Ваше общее впечатление:</h3>
+          <label class="form-impression__label">
+            <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
+            name="impression" value="good" id="good" checked>
+            <span class="form-impression-indicator form-impression-indicator--radio"></span>
+            <span class="form-impression-text"> Скорее  положительное </span>  
+          </label>
+          <label class="form-impression__label">
+              <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
+              name="impression" value="bad" id="bad">
+              <span class="form-impression-indicator form-impression-indicator--radio"></span>
+              <span class="form-impression-text"> Скорее отрицательное </span> 
+          </label>
+          <label class="form-impression__label">
+            <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
+            name="impression" value="difficult" id="difficult">
+            <span class="form-impression-indicator form-impression-indicator--radio"></span>
+            <span class="form-impression-text"> Затрудняюсь ответить </span>
+          </label>
+        </div>
+        <div class="form-places">
+          <h3 class="form-contact__title form-contact__title--title">Посещенные <br> достопримечательности:</h3>
+          <div class="form-places--wrapper">
+            <label class="form-impression__label form-impression__label--singhts">
+              <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox" 
+                name="bridge" value="positive" checked>
+              <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
+              <span class="check-box"> Мост Дьявола</span> 
+            </label>
+            <label class="form-impression__label form-impression__label--singhts">
+              <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
+              name="mountain" value="positive" checked>
+              <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
+              <span class="check-box"> Гора-Колокол </span>
+            </label>
+            <label class="form-impression__label form-impression__label--singhts">
+              <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
+              name="park" value="positive" checked>
+              <span class="form-impression-indicator form-impression-indicator--checkbox"></span> 
+              <span class="check-box"> Слайд-парк </span>
+            </label>
+            <label class="form-impression__label form-impression__label--singhts">
+              <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox"
+              name="rocks" value="positive"> 
+              <span class="form-impression-indicator form-impression-indicator--checkbox"></span>
+              <span class="check-box"> Красные скалы </span>
+            </label>
+          </div>
+        </div>
+        <div class="form-emotion">
+          <h3 class="form-contact__title form-contact__title--title">Опишите свои эмоции:</h3>
+          <textarea class="form-emotion__input" name="emotion" placeholder="Опишите подробно все свои восторги"
+          name="emotion"></textarea>
+        </div>
+        <div class="form-button--wrapper">
+          <button class="form-button booking__button--button" type="button">Отправить отзыв</button>
+          <span class="necessarily-field"> * — обязательные поля </span>
+        </div>
+      </form>
     </main>
 
     <footer class="page-footer">
       <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
       <div class="footer-buttons">
-          <ul class="footer-buttons__list">
-              <li>
-                <a class="footer-buttons__link" href="#" aria-label="Твиттер">
-                  <svg class="footer-buttons__link--twitter" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer-buttons__link" href="#" aria-label="Фейсбук">
-                  <svg class="footer-buttons__link--facebook" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer-buttons__link" href="#" aria-label="Ютуб">
-                  <svg class="footer-buttons__link--youtube" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-          </ul>
+        <ul class="footer-buttons__list">
+          <li>
+            <a class="footer-buttons__link" href="#" aria-label="Твиттер">
+              <svg class="footer-buttons__link--twitter" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-buttons__link" href="#" aria-label="Фейсбук">
+              <svg class="footer-buttons__link--facebook" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-buttons__link" href="#" aria-label="Ютуб">
+              <svg class="footer-buttons__link--youtube" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="footer-log">
-          <p class="footer-log__by">website by</p>
-          <a class="footer-log__logo" href="https://vk.com/id93282061" aria-label="сайт Дмитрия">
-              <img src="img/dima.png" width="40" height="40" alt="производство сайта от Дмитрия">
-          </a>
+        <p class="footer-log__by">website by</p>
+        <a class="footer-log__logo" href="https://vk.com/id93282061" aria-label="Сайт Дмитрия">
+          <img src="img/dima.png" width="40" height="40" alt="D" title="Производство сайта от Дмитрия">
+        </a>
       </div>
     </footer>
-
 
     <div class="popup">
       <div class="popup_body">
@@ -221,5 +214,5 @@
     </div>
     <script src="js/main.js" charset="utf-8"></script>
 
-      </body>
-    </html>
+  </body>
+</html>

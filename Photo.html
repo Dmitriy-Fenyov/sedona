@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Какие места есть в Седоне">
-    <title>Sedona - небольшой городок в Аризоне</title>   <!--заголовок сайта-->
+    <title>Sedona - небольшой городок в Аризоне</title>   
     <link rel="stylesheet" href="css/stylemain.css">
     <link rel="preload" href="/source/fonts/ptsans.woff2" as="font">
   </head>
@@ -17,14 +17,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item bold open" >
+            <li class="site-list__item site-list__item--item open" >
               <a href="index.html">
-                главная
+                Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active bold open ">
+            <li class="site-list__item site-list__item--active site-list__item--item open ">
               <a href="photo.html">
-                фото и видео
+                Фото и видео
               </a>
             </li>
             <li class="site-list__item page-header__logo">
@@ -32,21 +32,21 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-                  <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Лого Седона" width="102" height="83">
+                  <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Город Седона" width="102" height="83">
                 </picture>
               </a>
               <button class="page-header__toggle page-header__toggle--toggle" type="button">
                 <span class="visually-hidden">Открыть меню</span>
               </button>
             </li>
-            <li class="site-list__item bold open">
+            <li class="site-list__item site-list__item--item open">
               <a href="form.html">
-                форма отзыва
+                Форма отзыва
               </a>
             </li>
-            <li class="site-list__item bold shadow open">
+            <li class="site-list__item site-list__item--item site-list__item--shadow open">
               <a href="#">
-                найти гостинницу
+                Найти гостинницу
               </a>
             </li>
           </ul>
@@ -55,198 +55,196 @@
     </header>
 
     <main class="page-main">
-        <h1 class="visually-hidden">
-            Фото Седоны
-        </h1>
-        <div class="view view--bg-back">
-            <div class="view__promo view__promo--text"></div>
-            <div class="view__mask view__mask--mask"></div>
-        </div>
-        <section class="photo">
-            <div class="photo__title">
-              <h2 class="photo__title--title">
-                фото и видео
-              </h2>
-              <p class="photo__intro photo__intro--intro">
-                не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
-              </p>
-            </div>  
-            <div class="photo-block">
-                <ul class="photo-block__list photo">
-                    <li class="photo-block__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width:900px)" srcset="img/photo-sunset-desktop@2x.webp 2x, img/photo-sunset-desktop@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:450px)" srcset="img/photo-sunset-tablet@2x.webp 2x, img/photo-sunset-tablet@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:320px)" srcset="img/photo-sunset-mobile@2x.webp 2x, img/photo-sunset-mobile@1x.webp 1x">
-                        <source media="(min-width:900px)" srcset="img/photo-sunset-desktop@2x.jpg 2x, img/photo-sunset-desktop@1x.jpg 1x">
-                        <source media="(min-width:450px)" srcset="img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.jpg 1x">
-                        <source media="(min-width:320px)" srcset="img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.jpg 1x">
-                        <img class="photo-block__image photo-block__image--big" src="img/photo-sunset-mobile@1x.jpg" width="100%" height="280" alt="закат в Седоне">
-                      </picture>
-                      <div class="photo-block__info bg-wrapper">
-                        <div class="photo-block__info--wrapper">
-                          <h3 class="photo-block__title photo-block__title--bold">неродные просторы</h3>
-                          <p class="photo-block__author photo-block__author--size"> Автор фото: Борис</p>
-                        </div>
-                        <div class="photo-block__button--wrapper">
-                          <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
-                            <svg class="like__icon" width="24" height="22">
-                              <use xlink:href="img/sprite.svg#icon-like"></use>
-                            </svg>
-                          </button>
-                          <output name="resalt">1350</output>
-                        </div>
-                      </div> 
-                    </li>
-                    <li class="photo-block__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width:900px)" srcset="img/photo-cactus-desktop@2x.webp 2x, img/photo-cactus-desktop@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:450px)" srcset="img/photo-cactus-tablet@2x.webp 2x, img/photo-cactus-tablet@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:320px)" srcset="img/photo-cactus-mobile@2x.webp 2x, img/photo-cactus-mobile@1x.webp 1x">
-                        <source media="(min-width:900px)" srcset="img/photo-cactus-desktop@2x.jpg 2x, img/photo-cactus-desktop@1x.jpg 1x">
-                        <source media="(min-width:450px)" srcset="img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.jpg 1x">
-                        <source media="(min-width:320px)" srcset="img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.jpg 1x">
-                        <img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" width="100%" height="280" alt="растительность Седоны">
-                      </picture>
-                      <div class="photo-block__info bg-wrapper">
-                        <div class="photo-block__info--wrapper">
-                          <h3 class="photo-block__title photo-block__title--bold">местная растительность</h3>
-                          <p class="photo-block__author photo-block__author--size"> Автор фото: Сергей</p>
-                        </div>
-                        <div class="photo-block__button--wrapper">
-                          <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
-                            <svg class="like__icon" width="24" height="22">
-                              <use xlink:href="img/sprite.svg#icon-like"></use>
-                            </svg>
-                          </button>
-                          <output name="resalt">143</output>
-                        </div>
-                      </div>  
-                    </li>
-                    <li class="photo-block__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width:900px)" srcset="img/photo-roads-desktop@2x.webp 2x, img/photo-roads-desktop@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:450px)" srcset="img/photo-roads-tablet@2x.webp 2x, img/photo-roads-tablet@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:320px)" srcset="img/photo-roads-mobile@2x.webp 2x, img/photo-roads-mobile@1x.webp 1x">
-                        <source media="(min-width:900px)" srcset="img/photo-roads-desktop@2x.jpg 2x, img/photo-roads-desktop@1x.jpg 1x">
-                        <source media="(min-width:450px)" srcset="img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.jpg 1x">
-                        <source media="(min-width:320px)" srcset="img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.jpg 1x">
-                        <img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" width="100%" height="280" alt="дорога на север">
-                      </picture>
-                      <div class="photo-block__info bg-wrapper">
-                        <div class="photo-block__info--wrapper">
-                          <h3 class="photo-block__title photo-block__title--bold">дорога на север</h3>
-                          <p class="photo-block__author photo-block__author--size"> Автор фото: Пётр</p>
-                        </div>
-                        <div class="photo-block__button--wrapper">
-                          <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
-                            <svg class="like__icon" width="24" height="22">
-                              <use xlink:href="img/sprite.svg#icon-like"></use>
-                            </svg>
-                          </button>
-                          <output name="resalt">96</output>
-                        </div>
-                      </div>    
-                    </li>
-                    <li class="photo-block__item">
-                      <picture>
-                        <source type="image/webp" media="(min-width:900px)" srcset="img/photo-bridge-desktop@2x.webp 2x, img/photo-bridge-desktop@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:450px)" srcset="img/photo-bridge-tablet@2x.webp 2x, img/photo-bridge-tablet@1x.webp 1x">
-                        <source type="image/webp" media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.webp 2x, img/photo-bridge-mobile@1x.webp 1x">
-                        <source media="(min-width:900px)" srcset="img/photo-bridge-desktop@2x.jpg 2x, img/photo-bridge-desktop@1x.jpg 1x">
-                        <source media="(min-width:450px)" srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x">
-                        <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg 1x">
-                        <img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" width="100%" height="280" alt="мост в Седоне">
-                      </picture>
-                      <div class="photo-block__info bg-wrapper">
-                          <div class="photo-block__info--wrapper">
-                            <h3 class="photo-block__title photo-block__title--bold">мост дьявола</h3>
-                            <p class="photo-block__author photo-block__author--size"> Автор фото: Антон</p>
-                          </div> 
-                          <div class="photo-block__button--wrapper">   
-                            <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
-                              <svg class="like__icon" width="24" height="22">
-                                <use xlink:href="img/sprite.svg#icon-like"></use>
-                              </svg>
-                            </button>
-                            <output name="resalt">254</output>
-                          </div>
-                      </div> 
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="video">
-            <h2 class="video__title photo__title--title">все еще сомневаетесь?</h2>
-            <p class="video__intro photo__intro--intro">смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <div class="video-frame">
-              <div class="video-frame--wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width:900px)" srcset="img/video-desktop@2x.webp 2x, img/video-desktop@1x.webp 1x">
-                  <source type="image/webp" media="(min-width:450px)" srcset="img/video-tablet@2x.webp 2x, img/video-tablet@1x.webp 1x">
-                  <source type="image/webp" media="(min-width:320px)" srcset="img/video-mobile@2x.webp 2x, img/video-mobile@1x.webp 1x">
-                  <source media="(min-width:900px)" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.jpg 1x">
-                  <source media="(min-width:768px)" srcset="img/video-tablet@2x.jpg 2x, img/video-tablet@1x.jpg 1x">
-                  <source media="(min-width:320px)" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x">
-                  <img class="video-frame__image" src="img/video-mobile@1x.jpg" width="100%" height="200" alt="видео про Седону">
-                </picture>
-              </div>  
-              <div class="video-frame__options">
-                <div class="video-frame__timer"></div>
-                <div class="video-frame__function">
-                    <button class="video-frame__repeat video-frame__repeat--icon-repeat" type="button" aria-label="Начать просмотр заново">
-                       <svg class="video-frame__icon" width="16" height="20">
-                         <use xlink:href="img/sprite.svg#icon-video-replay"></use>
-                       </svg> 
-                    </button>
-                    <button class="video-frame__subtitles video-frame__subtitles--icon-subtitles" type="button" aria-label="Субтитры"> 
-                      <svg class="video-frame__icon" width="32" height="20">
-                        <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
-                      </svg> 
-                    </button>
-                    <button class="video-frame__fullscreen video-frame__fullscreen--icon-fulscreen" type="button" aria-label="Полный экран"> 
-                      <svg class="video-frame__icon" width="20" height="20">
-                        <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
-                      </svg> 
-                    </button>
-                </div>
+      <h1 class="visually-hidden">
+        Фото Седоны
+      </h1>
+      <div class="view view--bg-back">
+        <div class="view__promo view__promo--text"></div>
+        <div class="view__mask view__mask--mask"></div>
+      </div>
+      <section class="photo">
+        <div class="photo__title">
+          <h2 class="photo__title--title">
+            Фото и видео
+          </h2>
+          <p class="photo__intro photo__intro--intro">
+            Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
+          </p>
+        </div>  
+        <ul class="photo-block__list photo">
+          <li class="photo-block__item">
+            <picture>
+              <source type="image/webp" media="(min-width:900px)" srcset="img/photo-sunset-desktop@2x.webp 2x, img/photo-sunset-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width:450px)" srcset="img/photo-sunset-tablet@2x.webp 2x, img/photo-sunset-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width:320px)" srcset="img/photo-sunset-mobile@2x.webp 2x, img/photo-sunset-mobile@1x.webp 1x">
+              <source media="(min-width:900px)" srcset="img/photo-sunset-desktop@2x.jpg 2x, img/photo-sunset-desktop@1x.jpg 1x">
+              <source media="(min-width:450px)" srcset="img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.jpg 1x">
+              <img class="photo-block__image photo-block__image--big" src="img/photo-sunset-mobile@1x.jpg" width="100%" height="280" alt="Закат в Седоне">
+            </picture>
+            <div class="photo-block__info bg-wrapper">
+              <div class="photo-block__info--wrapper">
+                <h3 class="photo-block__title photo-block__title--bold">Неродные просторы</h3>
+                <p class="photo-block__author photo-block__author--size"> Автор фото: Борис</p>
               </div>
+              <div class="photo-block__button--wrapper">
+                <button class="photo-block__button photo-block__button--like js-like" data-tip="1350" type="button" aria-label="Поставить лайк">
+                  <svg class="like__icon" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <output name="result">1350</output>
+              </div>
+            </div> 
+          </li>
+          <li class="photo-block__item">
+            <picture>
+              <source type="image/webp" media="(min-width:900px)" srcset="img/photo-cactus-desktop@2x.webp 2x, img/photo-cactus-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width:450px)" srcset="img/photo-cactus-tablet@2x.webp 2x, img/photo-cactus-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width:320px)" srcset="img/photo-cactus-mobile@2x.webp 2x, img/photo-cactus-mobile@1x.webp 1x">
+              <source media="(min-width:900px)" srcset="img/photo-cactus-desktop@2x.jpg 2x, img/photo-cactus-desktop@1x.jpg 1x">
+              <source media="(min-width:450px)" srcset="img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.jpg 1x">
+              <img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" width="100%" height="280" alt="Растительность Седоны">
+            </picture>
+            <div class="photo-block__info bg-wrapper">
+              <div class="photo-block__info--wrapper">
+                <h3 class="photo-block__title photo-block__title--bold">Местная растительность</h3>
+                <p class="photo-block__author photo-block__author--size"> Автор фото: Сергей</p>
+              </div>
+              <div class="photo-block__button--wrapper">
+                <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
+                  <svg class="like__icon" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <output name="result">143</output>
+              </div>
+            </div>  
+          </li>
+          <li class="photo-block__item">
+            <picture>
+              <source type="image/webp" media="(min-width:900px)" srcset="img/photo-roads-desktop@2x.webp 2x, img/photo-roads-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width:450px)" srcset="img/photo-roads-tablet@2x.webp 2x, img/photo-roads-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width:320px)" srcset="img/photo-roads-mobile@2x.webp 2x, img/photo-roads-mobile@1x.webp 1x">
+              <source media="(min-width:900px)" srcset="img/photo-roads-desktop@2x.jpg 2x, img/photo-roads-desktop@1x.jpg 1x">
+              <source media="(min-width:450px)" srcset="img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.jpg 1x">
+              <img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" width="100%" height="280" alt="Дорога на север">
+            </picture>
+            <div class="photo-block__info bg-wrapper">
+              <div class="photo-block__info--wrapper">
+                <h3 class="photo-block__title photo-block__title--bold">Дорога на север</h3>
+                <p class="photo-block__author photo-block__author--size"> Автор фото: Пётр</p>
+              </div>
+              <div class="photo-block__button--wrapper">
+                <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
+                  <svg class="like__icon" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <output name="result">96</output>
+              </div>
+            </div>    
+          </li>
+          <li class="photo-block__item">
+            <picture>
+              <source type="image/webp" media="(min-width:900px)" srcset="img/photo-bridge-desktop@2x.webp 2x, img/photo-bridge-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width:450px)" srcset="img/photo-bridge-tablet@2x.webp 2x, img/photo-bridge-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.webp 2x, img/photo-bridge-mobile@1x.webp 1x">
+              <source media="(min-width:900px)" srcset="img/photo-bridge-desktop@2x.jpg 2x, img/photo-bridge-desktop@1x.jpg 1x">
+              <source media="(min-width:450px)" srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg 1x">
+              <img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" width="100%" height="280" alt="Мост в Седоне">
+            </picture>
+            <div class="photo-block__info bg-wrapper">
+              <div class="photo-block__info--wrapper">
+                <h3 class="photo-block__title photo-block__title--bold">Мост дьявола</h3>
+                <p class="photo-block__author photo-block__author--size"> Автор фото: Антон</p>
+              </div> 
+              <div class="photo-block__button--wrapper">   
+                <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
+                  <svg class="like__icon" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <output name="result">254</output>
+              </div>
+            </div> 
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__title photo__title--title">Все еще сомневаетесь?</h2>
+        <p class="video__intro photo__intro--intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video-frame">
+          <div class="video-frame--wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width:900px)" srcset="img/video-desktop@2x.webp 2x, img/video-desktop@1x.webp 1x">
+              <source type="image/webp" media="(min-width:450px)" srcset="img/video-tablet@2x.webp 2x, img/video-tablet@1x.webp 1x">
+              <source type="image/webp" media="(min-width:320px)" srcset="img/video-mobile@2x.webp 2x, img/video-mobile@1x.webp 1x">
+              <source media="(min-width:900px)" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/video-tablet@2x.jpg 2x, img/video-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x">
+              <img class="video-frame__image" src="img/video-mobile@1x.jpg" width="100%" height="200" alt="Видео про Седону">
+            </picture>
+          </div>  
+          <div class="video-frame__options">
+            <div class="video-frame__timer"></div>
+            <div class="video-frame__function">
+              <button class="video-frame__repeat video-frame__repeat--icon-repeat" type="button" aria-label="Начать просмотр заново">
+                <svg class="video-frame__icon" width="16" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                </svg> 
+              </button>
+              <button class="video-frame__subtitles video-frame__subtitles--icon-subtitles" type="button" aria-label="Субтитры"> 
+                <svg class="video-frame__icon" width="32" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                </svg> 
+              </button>
+              <button class="video-frame__fullscreen video-frame__fullscreen--icon-fulscreen" type="button" aria-label="Полный экран"> 
+                <svg class="video-frame__icon" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                </svg> 
+              </button>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
       <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
       <div class="footer-buttons">
-          <ul class="footer-buttons__list">
-              <li>
-                <a class="footer-buttons__link" href="#" aria-label="Твиттер">
-                  <svg class="footer-buttons__link--twitter" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer-buttons__link" href="#" aria-label="Фейсбук">
-                  <svg class="footer-buttons__link--facebook" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="footer-buttons__link" href="#" aria-label="Ютуб">
-                  <svg class="footer-buttons__link--youtube" width="24" height="22">
-                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                  </svg>
-                </a>
-              </li>
-          </ul>
+        <ul class="footer-buttons__list">
+          <li>
+            <a class="footer-buttons__link" href="#" aria-label="Твиттер">
+              <svg class="footer-buttons__link--twitter" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-buttons__link" href="#" aria-label="Фейсбук">
+              <svg class="footer-buttons__link--facebook" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-buttons__link" href="#" aria-label="Ютуб">
+              <svg class="footer-buttons__link--youtube" width="24" height="22">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="footer-log">
-          <p class="footer-log__by">website by</p>
-          <a class="footer-log__logo" href="https://vk.com/id93282061" aria-label="сайт Дмитрия">
-              <img src="img/dima.png" width="40" height="40" alt="производство сайта от Дмитрия">
-          </a>
+        <p class="footer-log__by">website by</p>
+        <a class="footer-log__logo" href="https://vk.com/id93282061" aria-label="Сайт Дмитрия">
+          <img src="img/dima.png" width="40" height="40" alt="D" title="Производство сайта от Дмитрия">
+        </a>
       </div>
     </footer>
 

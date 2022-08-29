@@ -1,6 +1,6 @@
 .page-footer {
-padding: 40px 20px 25px 20px;
-background-color: #ffffff;  
+    padding: 40px 20px 25px 20px;
+    background-color: #ffffff;  
     @media (min-width:768px) {
         display: flex;
         justify-content: space-between;
@@ -27,9 +27,9 @@ background-color: #ffffff;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
-   @media (min-width:768px) {
-    margin-bottom: 0;
-}
+    @media (min-width:768px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-buttons__list {
@@ -42,23 +42,23 @@ background-color: #ffffff;
 }
 
 .footer-buttons__link {
-display: block;
-position: relative;
-width: 48px;
-height: 48px;
-background-color: #81b3d2;
-text-decoration: none; 
-&:hover {
-    background-color: rgb(102, 158, 192);
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #81b3d2;
+    text-decoration: none; 
+        &:hover {
+            background-color: rgb(102, 158, 192);
 
-}
+        }
 
-&:active {
-    background-color: rgb(84, 150, 189);
-    svg {
-        opacity: 0.3;
-      }
-}   
+        &:active {
+            background-color: rgb(84, 150, 189);
+            svg {
+                opacity: 0.3;
+            }
+        }   
 }
 
 .footer-buttons__link--twitter {
@@ -92,9 +92,9 @@ text-decoration: none;
 }
 
 .footer-log {
-display: flex;
-justify-content: center;
-align-items: center;    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
 .footer-log__by {
