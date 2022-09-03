@@ -59,19 +59,19 @@
         Фото Седоны
       </h1>
       <div class="view view--bg-back">
-        <div class="view__promo view__promo--text"></div>
-        <div class="view__mask view__mask--mask"></div>
+        <div class="view__promo"></div>
+        <div class="view__mask"></div>
       </div>
       <section class="photo">
-        <div class="photo__title">
-          <h2 class="photo__title--title">
+        <div class="photo__title__wrapper">
+          <h2 class="photo__title">
             Фото и видео
           </h2>
-          <p class="photo__intro photo__intro--intro">
+          <p>
             Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>  
-        <ul class="photo-block__list photo">
+        <ul class="photo-block__list">
           <li class="photo-block__item">
             <picture>
               <source type="image/webp" media="(min-width:900px)" srcset="img/photo-sunset-desktop@2x.webp 2x, img/photo-sunset-desktop@1x.webp 1x">
@@ -82,13 +82,13 @@
               <source media="(min-width:320px)" srcset="img/photo-sunset-mobile@2x.jpg 2x, img/photo-sunset-mobile@1x.jpg 1x">
               <img class="photo-block__image photo-block__image--big" src="img/photo-sunset-mobile@1x.jpg" width="100%" height="280" alt="Закат в Седоне">
             </picture>
-            <div class="photo-block__info bg-wrapper">
-              <div class="photo-block__info--wrapper">
-                <h3 class="photo-block__title photo-block__title--bold">Неродные просторы</h3>
-                <p class="photo-block__author photo-block__author--size"> Автор фото: Борис</p>
+            <div class="photo-block__info">
+              <div class="photo-block__info__wrapper">
+                <h3 class="photo-block__title">Неродные просторы</h3>
+                <p class="photo-block__author"> Автор фото: Борис</p>
               </div>
-              <div class="photo-block__button--wrapper">
-                <button class="photo-block__button photo-block__button--like js-like" data-tip="1350" type="button" aria-label="Поставить лайк">
+              <div class="photo-block__button__wrapper">
+                <button class="photo-block__button js-like" data-tip="1350" type="button" aria-label="Поставить лайк">
                   <svg class="like__icon" width="24" height="22">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
@@ -107,13 +107,13 @@
               <source media="(min-width:320px)" srcset="img/photo-cactus-mobile@2x.jpg 2x, img/photo-cactus-mobile@1x.jpg 1x">
               <img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" width="100%" height="280" alt="Растительность Седоны">
             </picture>
-            <div class="photo-block__info bg-wrapper">
-              <div class="photo-block__info--wrapper">
-                <h3 class="photo-block__title photo-block__title--bold">Местная растительность</h3>
-                <p class="photo-block__author photo-block__author--size"> Автор фото: Сергей</p>
+            <div class="photo-block__info">
+              <div class="photo-block__info__wrapper">
+                <h3 class="photo-block__title">Местная растительность</h3>
+                <p class="photo-block__author"> Автор фото: Сергей</p>
               </div>
-              <div class="photo-block__button--wrapper">
-                <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
+              <div class="photo-block__button__wrapper">
+                <button class="photo-block__button js-like" type="button" aria-label="Поставить лайк">
                   <svg class="like__icon" width="24" height="22">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
@@ -132,13 +132,13 @@
               <source media="(min-width:320px)" srcset="img/photo-roads-mobile@2x.jpg 2x, img/photo-roads-mobile@1x.jpg 1x">
               <img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" width="100%" height="280" alt="Дорога на север">
             </picture>
-            <div class="photo-block__info bg-wrapper">
-              <div class="photo-block__info--wrapper">
-                <h3 class="photo-block__title photo-block__title--bold">Дорога на север</h3>
-                <p class="photo-block__author photo-block__author--size"> Автор фото: Пётр</p>
+            <div class="photo-block__info">
+              <div class="photo-block__info__wrapper">
+                <h3 class="photo-block__title">Дорога на север</h3>
+                <p class="photo-block__author"> Автор фото: Пётр</p>
               </div>
-              <div class="photo-block__button--wrapper">
-                <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
+              <div class="photo-block__button__wrapper">
+                <button class="photo-block__button js-like" type="button" aria-label="Поставить лайк">
                   <svg class="like__icon" width="24" height="22">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
@@ -157,13 +157,13 @@
               <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg 1x">
               <img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" width="100%" height="280" alt="Мост в Седоне">
             </picture>
-            <div class="photo-block__info bg-wrapper">
-              <div class="photo-block__info--wrapper">
-                <h3 class="photo-block__title photo-block__title--bold">Мост дьявола</h3>
-                <p class="photo-block__author photo-block__author--size"> Автор фото: Антон</p>
+            <div class="photo-block__info">
+              <div class="photo-block__info__wrapper">
+                <h3 class="photo-block__title">Мост дьявола</h3>
+                <p class="photo-block__author"> Автор фото: Антон</p>
               </div> 
-              <div class="photo-block__button--wrapper">   
-                <button class="photo-block__button photo-block__button--like js-like" type="button" aria-label="Поставить лайк">
+              <div class="photo-block__button__wrapper">   
+                <button class="photo-block__button js-like" type="button" aria-label="Поставить лайк">
                   <svg class="like__icon" width="24" height="22">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
@@ -175,8 +175,8 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="video__title photo__title--title">Все еще сомневаетесь?</h2>
-        <p class="video__intro photo__intro--intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video-frame">
           <div class="video-frame--wrapper">
             <picture>
@@ -213,8 +213,8 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
+    <footer class="footer">
+      <b class="footer__hash">#VISITSEDONA</b>
       <div class="footer-buttons">
         <ul class="footer-buttons__list">
           <li>

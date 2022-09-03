@@ -4,16 +4,11 @@
     max-width: 350px;
     margin: 0 auto;
     @media (min-width:768px) {
+        font-size: 30px;
         padding-top: 50px;
     }
     @media (min-width:1200px) {
         padding-top: 100px;
-    }
-}
-
-.block-form__title--title {
-    @media (min-width:768px) {
-        font-size: 30px;
     }
 }
 
@@ -74,19 +69,13 @@
 }
 
 .form-review__title {
+    font-size: 18px;
     text-align: center;
     margin: 20px 0 20px 0;
     @media (min-width:768px) {
         margin: 0 0 50px 0;
-    }
-}
-
-.form-review__title--title {
-    font-size: 18px;
-    @media (min-width:768px) {
         font-size: 21px;
     }
-
 }
 
 .form-review__item {
@@ -182,41 +171,36 @@
 
 }
 
-.form-contact__title {
+.form__title {
+    font-size: 18px;
+    line-height: 26px;
     text-align: center;
     margin:0 0 20px 0;
     position: relative;
     @media (min-width:768px) {
+        font-size: 21px;
         
-        &::before {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: 30%;
-            background: #e5e5e5;
-            top: 50%;
-            left: 0;
-        }
-        &::after {
-            position: absolute;
-            content: "";
-            height: 1px;
-            width: 30%;
-            background: #e5e5e5;
-            top: 50%;
-            right: 0;
-        }
+            &::before {
+                position: absolute;
+                content: "";
+                height: 1px;
+                width: 30%;
+                background: #e5e5e5;
+                top: 50%;
+                left: 0;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: 1px;
+                width: 30%;
+                background: #e5e5e5;
+                top: 50%;
+                right: 0;
+            }
     }
     @media (min-width:1200px) {
         margin-bottom: 70px;
-    }
-}
-
-.form-contact__title--title {
-    font-size: 18px;
-    line-height: 26px;
-    @media (min-width:768px) {
-        font-size: 21px;
     }
 }
 
@@ -230,7 +214,7 @@
     }
 }
 
-.form-contact--wrapper {
+.form-contact__wrapper {
     @media (min-width:1200px) {
         display: flex;
         justify-content: space-between;
@@ -287,19 +271,13 @@
 }
 
 .form-impression__title {
+    font-size: 18px;
     text-align: center;
     margin: 20px 0 40px;
     @media (min-width:768px) {
         margin: 0 0 50px 0;
-    }
-}
-
-.form-impression__title--title {
-    font-size: 18px;
-    @media (min-width:768px) {
         font-size: 21px;
     }
-
 }
 
 .form-impression__label {
@@ -370,7 +348,7 @@
     }
 }
 
-.form-places--wrapper {
+.form-places__wrapper {
     @media (min-width:768px) {
         display: flex;
         flex-direction: row;
@@ -445,7 +423,7 @@
     
 }
 
-.form-button--wrapper {
+.form-button__wrapper {
     @media (min-width:768px) {
         grid-column: 1/-1;
         display: flex;
@@ -456,6 +434,14 @@
 }
 
 .form-button {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    background-color: #81b3d2;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    align-items: center;
     display: block;
     margin: 0 auto;
     padding: 16px 55px;
@@ -463,6 +449,15 @@
         padding: 16px 77px;
         margin: 0;
     }
+        &:hover {
+            background-color: rgb(102, 158, 192);
+
+        }
+
+        &:active {
+            background-color: rgb(84, 150, 189);
+            color: rgba(256, 256, 256, 0.3);
+        }
 }
 
 .necessarily-field {

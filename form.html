@@ -59,20 +59,20 @@
         Отзывы о Седоне
       </h1>
       <div class="view view--bg-back">
-        <div class="view__promo view__promo--text"></div>
-        <div class="view__mask view__mask--mask"></div>
+        <div class="view__promo"></div>
+        <div class="view__mask"></div>
       </div>
       <section class="block-form">
-        <h2 class="block-form__title block-form__title--title">
+        <h2 class="block-form__title">
           Оставьте свой отзыв
         </h2>
-        <p class="block-form__intro block-form__intro--intro">
+        <p class="block-form__intro">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </section>
       <form class="form" method="post" action="#" autocomplete="off">
         <div class="form-review">
-          <h2 class="form-review__title form-review__title--title">Представьтесь:</h2>
+          <h2 class="form-review__title">Представьтесь:</h2>
           <p class="form-review__item">
             <label class="form-review__label">Имя*:</label>
             <input class="form-review__input form-review--bold js-input-name" type="text" placeholder="Пётр"
@@ -90,8 +90,8 @@
           </p>
         </div>
         <div class="form-contact">
-          <h3 class="form-contact__title form-contact__title--title">Контактная информация:</h3>
-          <div class="form-contact--wrapper">
+          <h3 class="form__title">Контактная информация:</h3>
+          <div class="form-contact__wrapper">
             <p class="form-contact__item">
               <label class="form-contact__label"> <span class="hidden">Контактный</span> телефон*:</label>
               <input class="form-contact__input form-review--bold js-input-num" type="tel" placeholder="Введите телефон"
@@ -107,7 +107,7 @@
           </div>
         </div>
         <div class="form-impression">
-          <h3 class="form-impression__title form-impression__title--title">Ваше общее впечатление:</h3>
+          <h3 class="form-impression__title">Ваше общее впечатление:</h3>
           <label class="form-impression__label">
             <input class="form-impression form-impression__input--radio visually-hidden" type="radio" 
             name="impression" value="good" id="good" checked>
@@ -128,8 +128,8 @@
           </label>
         </div>
         <div class="form-places">
-          <h3 class="form-contact__title form-contact__title--title">Посещенные <br> достопримечательности:</h3>
-          <div class="form-places--wrapper">
+          <h3 class="form__title">Посещенные <br> достопримечательности:</h3>
+          <div class="form-places__wrapper">
             <label class="form-impression__label form-impression__label--singhts">
               <input class="form-impression form-impression__input--checkbox visually-hidden" type="checkbox" 
                 name="bridge" value="positive" checked>
@@ -157,19 +157,19 @@
           </div>
         </div>
         <div class="form-emotion">
-          <h3 class="form-contact__title form-contact__title--title">Опишите свои эмоции:</h3>
+          <h3 class="form__title">Опишите свои эмоции:</h3>
           <textarea class="form-emotion__input" name="emotion" placeholder="Опишите подробно все свои восторги"
           name="emotion"></textarea>
         </div>
-        <div class="form-button--wrapper">
-          <button class="form-button booking__button--button" type="button">Отправить отзыв</button>
+        <div class="form-button__wrapper">
+          <button class="form-button" type="submit">Отправить отзыв</button>
           <span class="necessarily-field"> * — обязательные поля </span>
         </div>
       </form>
     </main>
 
-    <footer class="page-footer">
-      <b class="footer__hesh footer__hesh--hesh">#VISITSEDONA</b>
+    <footer class="footer">
+      <b class="footer__hash">#VISITSEDONA</b>
       <div class="footer-buttons">
         <ul class="footer-buttons__list">
           <li>

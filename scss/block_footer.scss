@@ -1,4 +1,4 @@
-.page-footer {
+.footer {
     padding: 40px 20px 25px 20px;
     background-color: #ffffff;  
     @media (min-width:768px) {
@@ -9,17 +9,14 @@
     } 
 }
 
-.footer__hesh {
+.footer__hash {
+    font-size: 21px;
     display: block;
     text-align: center;
     margin-bottom: 40px;
     @media (min-width:768px) {
         margin-bottom: 0;
     }
-}
-
-.footer__hesh--hesh {
-    font-size: 21px;
 }
 
 .footer-buttons {

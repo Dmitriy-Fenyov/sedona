@@ -1,9 +1,9 @@
-.page-footer {
+.footer {
   padding: 40px 20px 25px 20px;
   background-color: #ffffff;
 }
 @media (min-width: 768px) {
-  .page-footer {
+  .footer {
     display: flex;
     justify-content: space-between;
     padding: 30px 60px 30px 60px;
