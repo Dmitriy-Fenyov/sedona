@@ -48,11 +48,15 @@ const popupTextEl = document.querySelector(".popup_text");
 
 const userNameInput = document.querySelector('.js-input-name');
 const userSecondNameInput = document.querySelector('.js-input-secondname');
+const userThirdNameInput = document.querySelector('.js-input-thirdname');
 const userNumInput = document.querySelector('.js-input-num');
 const userMailInput = document.querySelector('.js-input-mail');
+const userEmotionInput = document.querySelector('.form-emotion__input');
 
 
-popupButtonEl.addEventListener("click", function() {
+popupButtonEl.addEventListener("click", function(evt) {
+
+  evt.preventDefault()
 
   if (userNameInput.value.length < 2 || userSecondNameInput.value.length <2 || userNumInput.value.length < 5 || userMailInput.value.length < 6) {
     alert('Заполните пожалуйста пропущенные поля!')
@@ -71,6 +75,12 @@ popupButtonEl.addEventListener("click", function() {
   }
 
     popupEl.classList.add("popup-open");
+    userNameInput.value = "",
+    userSecondNameInput.value = "",
+    userThirdNameInput.value = "",
+    userNumInput.value = "",
+    userMailInput.value = "",
+    userEmotionInput.value = ""
   }
 });
 
