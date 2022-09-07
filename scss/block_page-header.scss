@@ -52,14 +52,14 @@
 }
 .site-list {
     :nth-child(3) {
+        position: relative;
         margin: 0;
         padding: 0;
         text-align: center;
-        position: relative;
         @media (min-width:768px) {
+            position: relative;
             margin: 0 auto;
             padding: 0 auto;
-            position: relative;
         }
     }
     @media (min-width:768px) {
@@ -68,36 +68,31 @@
 }
 
 .page-header__logo-image {
-    overflow: auto;
-    margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+    overflow: auto;
+    margin: auto;
     background-color: transparent;
     @media (min-width:768px) {
         width: 450px;
-        top: 0; left: 0; bottom: 0; right: 0;
+
     }
     @media (min-width:1200px) {
         width: 700px;
-        top: 0; left: 0; bottom: 0; right: 0;
     }
-
 }
 
 .site-list__item--item {
-    background-color: rgb(129, 179, 210);
     width: 100%;
     font-weight: bold;
+    background-color: rgb(129, 179, 210);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     @media (max-width:767px) {
         &:hover {
             background-color: #669EC0;
-
         }
-
         &:active {
             background-color: #5496BD;
-
         }
     }
     @media (min-width:768px) {
@@ -122,25 +117,25 @@
     position: absolute;
     right: 5%;
     bottom: 30%;
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    display: block; 
-    content: "";
     width: 23px;
     height: 23px;
+    padding: 0;
+    display: block; 
+    content: "";
+    cursor: pointer;
+    border: none;
     
-    &::before {
-        content: "";
-        position: absolute;
-        top: 1px;
-        left: 0;
-        width: 23px;
-        height: 4px;
-        background-color: #81b3d2;
-        box-shadow: 0 8px 0 0 #81b3d2, 
-                    0 16px 0 0 #81b3d2;
-    }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 0;
+            width: 23px;
+            height: 4px;
+            background-color: #81b3d2;
+            box-shadow: 0 8px 0 0 #81b3d2, 
+                        0 16px 0 0 #81b3d2;
+        }
 
     @media (min-width:768px) {
         display: none;
@@ -168,12 +163,12 @@
 
 .main-nav_close-button {
     position: absolute;
-    content: "";
-    background-color: transparent;
     top: 17px;
     right: 10px;
     width: 22px;
     height: 22px;
+    content: "";
+    background-color: transparent;
     cursor: pointer;
     border: none;
         &::before,

@@ -1,24 +1,24 @@
 .video__title {
-  font-size: 18px;
-  text-align: center;
-  padding: 30px 20px 30px 20px;
   max-width: 350px;
   margin: 0 auto;
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+  font-size: 18px;
 }
 @media (min-width: 768px) {
   .video__title {
-    font-size: 30px;
-    line-height: 26px;
     max-width: 400px;
     padding-top: 50px;
+    font-size: 30px;
+    line-height: 26px;
   }
 }
 
 .video__intro {
   max-width: 300px;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .video__intro {
@@ -88,7 +88,7 @@
 .video-frame__timer::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 22%;
   transform: translate(-50%, -50%);
   width: 9px;
@@ -112,10 +112,10 @@
 }
 
 .video-frame__function {
-  display: flex;
   position: relative;
-  background-color: #f2f2f2;
+  display: flex;
   height: 70px;
+  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .video-frame__function {
@@ -125,11 +125,11 @@
 }
 
 .video-frame__repeat {
+  padding: 0;
+  margin-left: 20px;
   border: none;
   cursor: pointer;
   fill: rgb(92, 104, 112);
-  padding: 0;
-  margin-left: 20px;
 }
 .video-frame__repeat:hover {
   fill: rgb(51, 51, 51);
@@ -140,10 +140,10 @@
 }
 @media (min-width: 768px) {
   .video-frame__repeat {
-    background-color: transparent;
-    fill: #ffffff;
     margin-left: 5%;
     margin-right: 5%;
+    background-color: transparent;
+    fill: #ffffff;
   }
   .video-frame__repeat:hover {
     fill: rgb(255, 255, 255);
@@ -156,12 +156,12 @@
 }
 
 .video-frame__subtitles {
-  border: none;
-  cursor: pointer;
-  fill: #5C6870;
   padding: 0;
   margin-left: auto;
   margin-right: 4.5%;
+  border: none;
+  cursor: pointer;
+  fill: #5C6870;
 }
 .video-frame__subtitles:hover {
   fill: rgb(51, 51, 51);
@@ -186,11 +186,11 @@
 }
 
 .video-frame__fullscreen {
+  padding: 0;
+  margin-right: 20px;
   border: none;
   cursor: pointer;
   fill: #5C6870;
-  padding: 0;
-  margin-right: 20px;
 }
 .video-frame__fullscreen:hover {
   fill: rgb(51, 51, 51);
@@ -201,9 +201,9 @@
 }
 @media (min-width: 768px) {
   .video-frame__fullscreen {
+    margin-right: 6.2%;
     background-color: transparent;
     fill: #ffffff;
-    margin-right: 6.2%;
   }
   .video-frame__fullscreen:hover {
     fill: rgb(255, 255, 255);

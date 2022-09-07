@@ -9,52 +9,50 @@
     @media (min-width:1200px) {
         width: 100%;
     }
-}
 
-.booking__title {
-    width: 261px;
-    height: 40px;
-    margin: auto;
-    text-align: center;
-    @media (min-width:768px) {
-    width: 100vh;
-    } 
-}
-.booking__description {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
-    min-width: 230px;
-    @media (min-width:768px) {
-        padding: 0 150px;
+    &__title {
+        width: 261px;
+        height: 40px;
+        margin: auto;
+        text-align: center;
     }
 
-}
-.booking__button {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    background-color: #81b3d2;
-    color: #ffffff;
-    border: none;
-    text-transform: uppercase;
-    align-items: center;
-    display: block;
-    width: 280px;
-    margin: 0 auto;
-    padding: 16px 20px 18px 20px;
-    @media (min-width:768px) {
-        width: 460px;
+    &__description {
+        min-width: 230px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+        @media (min-width:768px) {
+            padding: 0 150px;
+        }
     }
-        &:hover {
-            background-color: rgb(102, 158, 192);
 
+    &__button {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        padding: 16px 20px 18px 20px;
+        font-size: 21px;
+        line-height: 26px;
+        align-items: center;
+        font-weight: bold;
+        background-color: #81b3d2;
+        color: #ffffff;
+        border: none;
+        text-transform: uppercase;
+        @media (min-width:768px) {
+            width: 460px;
         }
-
-        &:active {
-            background-color: rgb(84, 150, 189);
-            color: rgba(256, 256, 256, 0.3);
-        }
+            &:hover {
+                background-color: rgb(102, 158, 192);
+    
+            }
+    
+            &:active {
+                background-color: rgb(84, 150, 189);
+                color: rgba(256, 256, 256, 0.3);
+            }
+    }
 }
 
 .map {

@@ -4,9 +4,9 @@ background-color: #ffffff;
 
 .view {
     display: grid;
+    grid-template-rows: 3fr 1fr;
     min-height: 389px;
     min-width: 320px;
-    grid-template-rows: 3fr 1fr ;
     @media (min-width:768px) {
         min-height: 490px;
     }

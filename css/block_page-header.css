@@ -48,16 +48,16 @@
 }
 
 .site-list :nth-child(3) {
+  position: relative;
   margin: 0;
   padding: 0;
   text-align: center;
-  position: relative;
 }
 @media (min-width: 768px) {
   .site-list :nth-child(3) {
+    position: relative;
     margin: 0 auto;
     padding: 0 auto;
-    position: relative;
   }
 }
 @media (min-width: 768px) {
@@ -67,38 +67,30 @@
 }
 
 .page-header__logo-image {
-  overflow: auto;
-  margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  overflow: auto;
+  margin: auto;
   background-color: transparent;
 }
 @media (min-width: 768px) {
   .page-header__logo-image {
     width: 450px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
   }
 }
 @media (min-width: 1200px) {
   .page-header__logo-image {
     width: 700px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
   }
 }
 
 .site-list__item--item {
-  background-color: rgb(129, 179, 210);
   width: 100%;
   font-weight: bold;
+  background-color: rgb(129, 179, 210);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 767px) {
@@ -132,13 +124,13 @@
   position: absolute;
   right: 5%;
   bottom: 30%;
-  padding: 0;
-  cursor: pointer;
-  border: none;
-  display: block;
-  content: "";
   width: 23px;
   height: 23px;
+  padding: 0;
+  display: block;
+  content: "";
+  cursor: pointer;
+  border: none;
 }
 .page-header__toggle::before {
   content: "";
@@ -180,12 +172,12 @@
 
 .main-nav_close-button {
   position: absolute;
-  content: "";
-  background-color: transparent;
   top: 17px;
   right: 10px;
   width: 22px;
   height: 22px;
+  content: "";
+  background-color: transparent;
   cursor: pointer;
   border: none;
 }
