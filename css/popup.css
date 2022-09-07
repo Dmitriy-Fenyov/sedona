@@ -7,7 +7,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .popup_body {
   display: flex;
   justify-content: center;
@@ -15,11 +14,9 @@
   padding: 30px 10px;
   align-items: center;
 }
-
 .popup-open {
   display: inline-block;
 }
-
 .popup_content {
   position: relative;
   max-width: 800px;
@@ -34,7 +31,6 @@
     padding: 40px 60px 60px 60px;
   }
 }
-
 .popup_close {
   position: absolute;
   right: 10px;
@@ -43,13 +39,11 @@
   text-decoration: none;
   color: brown;
 }
-
 .popup_title {
   margin: 0px 0px 1em 0px;
   text-align: center;
   font-size: 26px;
 }
-
 .popup_text {
   text-align: center;
   text-transform: none;
