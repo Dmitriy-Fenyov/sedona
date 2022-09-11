@@ -16,25 +16,64 @@ closing.addEventListener("click", function() {
 
 const likes = document.querySelectorAll('.js-like');
 const likesNumbers = document.querySelectorAll('output');
+const firstPhoto = document.getElementById('firstPhoto');
+const secondPhoto = document.getElementById('secondPhoto');
+const thirdPhoto = document.getElementById('thirdPhoto');
+const fourthPhoto = document.getElementById('fourthPhoto');
+const buttonFirstPhoto = document.querySelector(".js-firstPhoto");
+const buttonSecondPhoto = document.querySelector(".js-secondPhoto");
+const buttonThirdPhoto = document.querySelector(".js-thirdPhoto");
+const buttonfourthPhoto = document.querySelector(".js-fourthPhoto");
+
+
+
 
 likes.forEach (likes => {
   likes.addEventListener('click', function() {
     
     if(likes.classList.contains('liked')) {
       likes.classList.remove('liked');
-      for (const likesNumber of likesNumbers) {
-        likesNumber.textContent--;
-      }
-        
     }
     else {
-      likesNumbers.textContent++;
         likes.classList.add('liked');
-        for (const likesNumber of likesNumbers) {
-          likesNumber.textContent++;
-        }
     }
   })
+});
+
+buttonFirstPhoto.addEventListener("click", function() {
+  if (buttonFirstPhoto.classList.contains('liked')) {
+  firstPhoto.textContent = ++firstPhoto.textContent
+  }
+  else {
+    firstPhoto.textContent = --firstPhoto.textContent
+}
+});
+
+buttonSecondPhoto.addEventListener("click", function() {
+  if (buttonSecondPhoto.classList.contains('liked')) {
+    secondPhoto.textContent = ++secondPhoto.textContent
+  }
+  else {
+    secondPhoto.textContent = --secondPhoto.textContent
+}
+});
+
+buttonThirdPhoto.addEventListener("click", function() {
+  if (buttonThirdPhoto.classList.contains('liked')) {
+    thirdPhoto.textContent = ++thirdPhoto.textContent
+  }
+  else {
+    thirdPhoto.textContent = --thirdPhoto.textContent
+}
+});
+
+buttonfourthPhoto.addEventListener("click", function() {
+  if (buttonfourthPhoto.classList.contains('liked')) {
+    fourthPhoto.textContent = ++fourthPhoto.textContent
+  }
+  else {
+    fourthPhoto.textContent = --fourthPhoto.textContent
+}
 });
 // Открытие/закрытие попапа и создание текста внутри попапа в зависимости от отзыва
 const POPUP_THANK_YOU = "Безумно рады что Вам понравилось, приезжайте к нам еще!"; 
